@@ -32,6 +32,56 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+    <style>
+        .text-gradiant {
+            background: -webkit-linear-gradient(#00613A, #005734);
+            -webkit-background-clip: text;
+        }
+
+        .bg-gradiant {
+            background: linear-gradient(80deg, #00613A 0%, #005734 100%);
+            border: none !important;
+            color: #fff !important;
+        }
+
+        .mode-btn {
+            background-color: #343a40;
+            border: 1px solid #343a40;
+        }
+
+        .navbar .navbar-nav .nav-link:hover,
+        .navbar .navbar-nav .nav-link:active,
+        .navbar .navbar-nav .nav-link.active {
+            color: #00613A !important;
+        }
+
+        .btn {
+            border-color: #00613A;
+        }
+
+        .btn-link {
+            color: #00613A;
+        }
+
+        .btn-link:hover {
+            color: #005734;
+        }
+
+        .service .service-box a:hover {
+            color: #00613A;
+        }
+
+        .app-slider .swiper-container .swiper-pagination-bullet-active {
+            background: #00613A;
+        }
+
+        .section.footer.bg-dark.overflow-hidden .bg-arrow {
+            background: #00613A;
+            background-repeat: no-repeat;
+        }
+
+    </style>
+
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="71">
@@ -149,7 +199,7 @@
                         </div>
 
                         <div class="service-content mt-4">
-                            <a href="">
+                            <a href="#" class="serviceTitle">
                                 <h5 class="fw-bold">Sudah Terdaftar dan Memiliki Kandang Sendiri</h5>
                             </a>
                             <p class="text-muted" style="text-align:justify;">Alif Aqiqah & Catering didalam
@@ -186,7 +236,7 @@
                         </div>
 
                         <div class="service-content mt-4">
-                            <a href="">
+                            <a href="#" class="serviceTitle">
                                 <h5 class="fw-bold">Pilihan Paket Aqiqah yang Tepat dan Bersertifikat</h5>
                             </a>
                             <p class="text-muted" style="text-align:justify;">Kami menyediakan ragam pilihan paket
@@ -222,7 +272,7 @@
                         </div>
 
                         <div class="service-content mt-4">
-                            <a href="">
+                            <a href="#" class="serviceTitle">
                                 <h5 class="fw-bold">Masakan Hiegienis dan Tidak Berbau Prengus</h5>
                             </a>
                             <p class="text-muted" style="text-align:justify;">Rasa Masakan yang sedap dan enak pada
@@ -260,7 +310,7 @@
                         </div>
 
                         <div class="service-content mt-4">
-                            <a href="">
+                            <a href="#" class="serviceTitle">
                                 <h5 class="fw-bold">Pelayanan Gratis Antar dan Distribusi</h5>
                             </a>
                             <p class="text-muted" style="text-align:justify;">Ramah tamah dan Kemudahan bagi anda
@@ -1259,7 +1309,7 @@
             <div class="row ">
                 <div class="col-lg-4">
                     <a class="navbar-brand logo text-uppercase" href="index-1.html">
-                        <img src="images/logo-footer.png" class="logo-light" alt="" height="30">
+                        <img src="logo.png" class="logo-light" alt="" height="30">
                         <!-- <img src="images/logo-dark.png" class="logo-dark" alt="" height="28"> -->
                     </a>
                     <p class="text-white-50 mt-2 mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -1270,18 +1320,18 @@
                         <div class=" d-flex align-items-center">
                             <a href="" class="me-2 avatar-sm text-center" data-bs-toggle="tooltip"
                                 data-bs-placement="top" title="Facebook">
-                                <i class="mdi mdi-facebook f-24 align-middle text-primary"></i>
+                                <i class="mdi mdi-facebook f-24 align-middle text-light"></i>
                             </a>
                             <a href="" class="mx-2 avatar-sm text-center" data-bs-toggle="tooltip"
                                 data-bs-placement="top" title="twitter">
-                                <i class="mdi mdi-twitter f-24 align-middle text-primary"></i>
+                                <i class="mdi mdi-twitter f-24 align-middle text-light"></i>
                             </a>
                             <a href="" class="mx-2 avatar-sm text-center" data-bs-toggle="tooltip"
                                 data-bs-placement="top" title="googleplay">
-                                <i class="mdi mdi-google-play f-24 align-middle text-primary"></i>
+                                <i class="mdi mdi-google-play f-24 align-middle text-light"></i>
                             </a>
                             <a href="" class="mx-2 avatar-sm text-center">
-                                <i class="mdi mdi-linkedin f-24 align-middle text-primary" data-bs-toggle="tooltip"
+                                <i class="mdi mdi-linkedin f-24 align-middle text-light" data-bs-toggle="tooltip"
                                     data-bs-placement="top" title="linkedin"></i>
                             </a>
                         </div>
@@ -1318,7 +1368,7 @@
                     <div class="input-group my-4">
                         <input type="text" class="form-control p-3" placeholder="subscribe" aria-label="subscribe"
                             aria-describedby="basic-addon2">
-                        <a href="" class="input-group-text bg-primary text-white px-4" id="basic-addon2">Go</a>
+                        <a href="" style="background:#343a40;" class="input-group-text text-white px-4" id="basic-addon2">Go</a>
                     </div>
                     <p class="mb-0 text-white-50">publishes will show up in your Subscriptions feed. You may also
                         start.
