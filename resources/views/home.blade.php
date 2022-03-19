@@ -71,6 +71,11 @@
             color: #00613A;
         }
 
+        .service .service-box:hover a {
+            color: #00613A;
+        }
+
+
         .app-slider .swiper-container .swiper-pagination-bullet-active {
             background: #00613A;
         }
@@ -1368,7 +1373,8 @@
                     <div class="input-group my-4">
                         <input type="text" class="form-control p-3" placeholder="subscribe" aria-label="subscribe"
                             aria-describedby="basic-addon2">
-                        <a href="" style="background:#343a40;" class="input-group-text text-white px-4" id="basic-addon2">Go</a>
+                        <a href="" style="background:#343a40;" class="input-group-text text-white px-4"
+                            id="basic-addon2">Go</a>
                     </div>
                     <p class="mb-0 text-white-50">publishes will show up in your Subscriptions feed. You may also
                         start.
