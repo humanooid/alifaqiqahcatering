@@ -85,6 +85,23 @@
             background-repeat: no-repeat;
         }
 
+        .accordion-button::after {
+            flex-shrink: 0;
+            width: 1.25rem;
+            height: 1.25rem;
+            margin-left: auto;
+            content: "";
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-size: 1.25rem;
+            transition: transform .2s ease-in-out
+        }
+
+        .accordion-button:not(.collapsed)::after {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+            transform: rotate(-180deg)
+        }
+
     </style>
 
 </head>
@@ -118,16 +135,16 @@
                         <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#service">Services</a>
+                        <a class="nav-link" href="#service">Layanan</a>
                     </li>
-                    <li class="nav-item">
+                    {{-- <li class="nav-item">
                         <a class="nav-link" href="#features">Features</a>
+                    </li> --}}
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Paket</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#pricing">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#app">Application</a>
+                        <a class="nav-link" href="#app">Testimoni</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#team">Team</a>
@@ -550,7 +567,7 @@
 
 
     <!-- start testimonial -->
-    <section class="section bg-light testimonial" id="testimonial">
+    {{-- <section class="section bg-light testimonial" id="testimonial">
         <!-- start container -->
         <div class="container">
             <div class="row align-items-center">
@@ -763,160 +780,521 @@
             </div>
         </div>
         <!-- end container -->
-    </section>
+    </section> --}}
     <!-- end testimonial -->
 
 
 
     <!-- pricing section -->
     <section class="section pricing" id="pricing">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="title text-center mb-5">
-                        <h6 class="mb-0 fw-bold text-primary">What's Your Price!</h6>
-                        <h2 class="f-40">Pricing plans!</h2>
-                        <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eos
-                            inventore omnis aliquid rerum alias molestias.</p>
+                        {{-- <h6 class="mb-0 fw-bold text-primary">What's Your Price!</h6> --}}
+                        <h2 class="f-40">Pilihan Paket</h2>
+                        {{-- <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eos
+                            inventore omnis aliquid rerum alias molestias.</p> --}}
 
                     </div>
                 </div>
             </div>
 
-            <div class="row align-items-center">
-                <div class="col-lg-4">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-2">
                     <div class="price-item shadow-sm overflow-hidden">
+                        <div class="price-up-box p-4">
+                            <div class="badge bg-primary fw-normal f-14">Paket A</div>
+                            <div class="price-tag mt-2">
+                                <h2 class="text-dark mb-0 f-40"><sup class="f-22 fw-normal">Rp.</sup>1,400</h2>
+                            </div>
+                            <p class="text-dark-50 mb-0">Domba Betina</p>
+                        </div>
+                        <div class="border border-3"></div>
+
+                        <div class="price-down-box p-4">
+                            <ul class="list-unstyled ">
+                                <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>150 Sate
+                                        Tusuk</b></li>
+                                <li class="mt-2"><i
+                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>40
+                                        Porsi Gulai</b></li>
+                                <li class="mt-2"><i
+                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis
+                                    Antar</li>
+                                <li class="mt-2"><i
+                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis
+                                    Distribusi</li>
+                                <li class="mt-2"><i
+                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>+
+                                    Sertifikat Aqiqah</li>
+                                <li class="mt-2"><i
+                                        class="mdi mdi-minus-circle f-20 align-middle me-2 text-danger"></i><s>+
+                                        Risalah Aqiqah</s></li>
+                            </ul>
+                            <center>
+                                <a href="" class="btn btn-sm btn-primary mt-3">PESAN</a>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="price-item shadow-sm overflow-hidden mt-4 mt-lg-0">
+                        <div class="price-up-box p-4">
+                            <div class="badge bg-primary fw-normal f-14">Paket B</div>
+                            <div class="price-tag mt-2">
+                                <h2 class="text-dark mb-0 f-40"><sup class="f-22 fw-normal">Rp.</sup>1,500</h2>
+                            </div>
+                            <p class="text-dark-50 mb-0">Domba Betina</p>
+                        </div>
+                        <div class="border border-3"></div>
+
+                        <div class="price-down-box p-4">
+                            <ul class="list-unstyled ">
+                                <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>200 Sate
+                                        Tusuk</b></li>
+                                <li class="mt-2"><i
+                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>45
+                                        Porsi Gulai</b></li>
+                                <li class="mt-2"><i
+                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis
+                                    Antar</li>
+                                <li class="mt-2"><i
+                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis
+                                    Distribusi</li>
+                                <li class="mt-2"><i
+                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>+
+                                    Sertifikat Aqiqah</li>
+                                <li class="mt-2"><i
+                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>+ Risalah
+                                    Aqiqah</li>
+                            </ul>
+                            <center>
+                                <a href="" class="btn btn-sm btn-primary mt-3">PESAN</a>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="price-item shadow-sm overflow-hidden mt-4 mt-lg-0">
+                        <div class="topbar-header bg-danger py-2 text-center">
+                            <h6 class="mb-0 text-white fw-normal"><b>Hot Price!</b></h6>
+                        </div>
                         <div class="price-up-box active p-4">
-                            <div class="badge bg-primary fw-normal f-14">Basic</div>
+                            <div class="badge bg-primary fw-normal f-14">Paket C</div>
                             <div class="price-tag mt-2">
-                                <h2 class="text-white mb-0 f-40"><sup class="f-22 fw-normal">$</sup>09<sup
-                                        class="f-16 fw-normal"> /month</sup></h2>
+                                <h2 class="text-white mb-0 f-40"><sup class="f-22 fw-normal">Rp.</sup>1,700</h2>
                             </div>
-                            <p class="text-white-50 mb-1">17 to 19 user</p>
-                            <p class="text-white-50 mb-0">For most businesses that want to optimize web query.</p>
+                            <p class="text-white-50 mb-0">Kambing Betina</p>
                         </div>
                         <div class="border border-3"></div>
 
                         <div class="price-down-box p-4">
                             <ul class="list-unstyled ">
-                                <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>2 App and
-                                    project</li>
+                                <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>250 Sate
+                                        Tusuk</b></li>
                                 <li class="mt-2"><i
-                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>400 Gb/s
-                                    storange</li>
+                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>50
+                                        Porsi Gulai</b></li>
                                 <li class="mt-2"><i
-                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Free
-                                    coustom domain
-                                </li>
+                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis
+                                    Antar</li>
                                 <li class="mt-2"><i
-                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Chat
-                                    Support
-                                </li>
+                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis
+                                    Distribusi</li>
                                 <li class="mt-2"><i
-                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>No
-                                    transaction fees
-                                </li>
+                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>+
+                                    Sertifikat Aqiqah</li>
                                 <li class="mt-2"><i
-                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Unlimited
-                                    Storage
-                                </li>
-
+                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>+ Risalah
+                                    Aqiqah</li>
                             </ul>
-                            <a href="" class="btn btn-sm text-primary mt-3"><i class="mdi mdi-check-all me-2"></i>your
-                                plane</a>
+                            <center>
+                                <a href="" class="btn btn-sm btn-primary mt-3">PESAN</a>
+                            </center>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 ">
+                <div class="col-lg-2">
                     <div class="price-item shadow-sm overflow-hidden mt-4 mt-lg-0">
-                        <div class="topbar-header bg-primary py-2 text-center">
-                            <h6 class="mb-0 text-white fw-normal">Recommended For You</h6>
-                        </div>
                         <div class="price-up-box p-4">
-                            <div class="badge bg-primary fw-normal f-14">Startup</div>
+                            <div class="badge bg-primary fw-normal f-14">Paket D</div>
                             <div class="price-tag mt-2">
-                                <h2 class="text-dark mb-0 f-40"><sup class="f-22 fw-normal">$</sup>19
-                                    <sup class="f-16 fw-normal"> /month</sup>
-                                </h2>
+                                <h2 class="text-dark mb-0 f-40"><sup class="f-22 fw-normal">Rp.</sup>2,000</h2>
                             </div>
-                            <p class="text-muted mb-1">20 to 40 user</p>
-                            <p class="text-muted mb-0">For most businesses that want to optimize web query.</p>
+                            <p class="text-dark-50 mb-0">Kambing Betina</p>
                         </div>
                         <div class="border border-3"></div>
 
                         <div class="price-down-box p-4">
                             <ul class="list-unstyled ">
-                                <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>15 App and
-                                    project</li>
+                                <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>300 Sate
+                                        Tusuk</b></li>
                                 <li class="mt-2"><i
-                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>800 Gb/s
-                                    storange</li>
+                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>60
+                                        Porsi Gulai</b></li>
                                 <li class="mt-2"><i
-                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Free
-                                    coustom domain
-                                </li>
+                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis
+                                    Antar</li>
                                 <li class="mt-2"><i
-                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Chat
-                                    Support
-                                </li>
+                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis
+                                    Distribusi</li>
                                 <li class="mt-2"><i
-                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>No
-                                    transaction fees
-                                </li>
+                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>+
+                                    Sertifikat Aqiqah</li>
                                 <li class="mt-2"><i
-                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Unlimited
-                                    Storage
-                                </li>
+                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>+ Risalah
+                                    Aqiqah</li>
                             </ul>
-                            <a href="" class="btn btn-sm btn-primary mt-3"><i class="mdi mdi-check-all me-2"></i>Buy
-                                Now</a>
+                            <center>
+                                <a href="" class="btn btn-sm btn-primary mt-3">PESAN</a>
+                            </center>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-2">
                     <div class="price-item shadow-sm overflow-hidden mt-4 mt-lg-0">
                         <div class="price-up-box p-4">
-                            <div class="badge bg-primary fw-normal f-14">Enterprise</div>
+                            <div class="badge bg-primary fw-normal f-14">Paket E</div>
                             <div class="price-tag mt-2">
-                                <h2 class="text-dark mb-0 f-40"><sup class="f-22 fw-normal">$</sup>29<sup
-                                        class="f-16 fw-normal"> /month</sup></h2>
+                                <h2 class="text-dark mb-0 f-40"><sup class="f-22 fw-normal">Rp.</sup>2,350</h2>
                             </div>
-                            <p class="text-muted mb-1">17 to 19 user</p>
-                            <p class="text-muted mb-0">For most businesses that want to optimize web query.</p>
+                            <p class="text-dark-50 mb-0">Kambing Betina</p>
                         </div>
                         <div class="border border-3"></div>
 
                         <div class="price-down-box p-4">
                             <ul class="list-unstyled ">
-                                <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Unlimited
-                                    App and
-                                    project</li>
+                                <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>500 Sate
+                                        Tusuk</b></li>
                                 <li class="mt-2"><i
-                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>1000 Gb/s
-                                    storange</li>
+                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>80
+                                        Porsi Gulai</b></li>
                                 <li class="mt-2"><i
-                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Free
-                                    coustom domain
-                                </li>
+                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis
+                                    Antar</li>
                                 <li class="mt-2"><i
-                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Chat
-                                    Support
-                                </li>
+                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis
+                                    Distribusi</li>
                                 <li class="mt-2"><i
-                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>No
-                                    transaction fees
-                                </li>
+                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>+
+                                    Sertifikat Aqiqah</li>
                                 <li class="mt-2"><i
-                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Unlimited
-                                    Storage
-                                </li>
+                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>+ Risalah
+                                    Aqiqah</li>
                             </ul>
-                            <a href="" class="btn btn-sm btn-primary mt-3"><i class="mdi mdi-check-all me-2"></i>Buy
-                                Now</a>
+                            <center>
+                                <a href="" class="btn btn-sm btn-primary mt-3">PESAN</a>
+                            </center>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="container-fluid mt-5 mb-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 bg-muted pt-3" style="height: 110px">
+                    <div class="title">
+                        <h4 class="text-white">Paket Aqiqah Kambing Jantan Paket Masak</h4>
+                    </div>
+                    <center>
+                        <img src="../../Jual-Kambing-domba-Alif-Aqiqah-Catering-Pangkalpinang.png"
+                            alt="Jual-Kambing-domba-Alif-Aqiqah-Catering-Pangkalpinang" width="100px"
+                            class="img-fluid mt-2">
+                    </center>
+                </div>
+                <div class="col-lg-4 bg-dark pt-3" style="height: 110px">
+                    <div class="title">
+                        <h4 class="text-white">Catering | Nasi Kotak | Prasmanan</h4>
+                    </div>
+                    <img src="../../Nasi-Kotak-Alif-Aqiqah-Catering-Pangkalpinang.png"
+                        alt="Nasi-Kotak-Alif-Aqiqah-Catering-Pangkalpinang" width="70px" class="img-fluid">
+                    <button class="btn btn-sm btn-orange float-end mb-3">Pesan</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-2">
+                <div class="price-item shadow-sm overflow-hidden">
+                    <div class="price-up-box p-4">
+                        <div class="badge bg-primary fw-normal f-14">Paket F</div>
+                        <div class="price-tag mt-2">
+                            <h2 class="text-dark mb-0 f-40"><sup class="f-22 fw-normal">Rp.</sup>2,500</h2>
+                        </div>
+                        <p class="text-dark-50 mb-0">Kambing Jantan</p>
+                    </div>
+                    <div class="border border-3"></div>
+
+                    <div class="price-down-box p-4">
+                        <ul class="list-unstyled ">
+                            <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>300 Sate
+                                    Tusuk</b></li>
+                            <li class="mt-2"><i
+                                    class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>60
+                                    Porsi Gulai</b></li>
+                            <li class="mt-2"><i
+                                    class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis
+                                Antar</li>
+                            <li class="mt-2"><i
+                                    class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis
+                                Distribusi</li>
+                            <li class="mt-2"><i
+                                    class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>+
+                                Sertifikat Aqiqah</li>
+                            <li class="mt-2"><i
+                                    class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>+ Risalah
+                                Aqiqah</li>
+                        </ul>
+                        <center>
+                            <a href="" class="btn btn-sm btn-primary mt-3">PESAN</a>
+                        </center>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="price-item shadow-sm overflow-hidden mt-4 mt-lg-0">
+                    <div class="price-up-box p-4">
+                        <div class="badge bg-primary fw-normal f-14">Paket G</div>
+                        <div class="price-tag mt-2">
+                            <h2 class="text-dark mb-0 f-40"><sup class="f-22 fw-normal">Rp.</sup>2,750</h2>
+                        </div>
+                        <p class="text-dark-50 mb-0">Kambing Jantan</p>
+                    </div>
+                    <div class="border border-3"></div>
+
+                    <div class="price-down-box p-4">
+                        <ul class="list-unstyled ">
+                            <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>350 Sate
+                                    Tusuk</b></li>
+                            <li class="mt-2"><i
+                                    class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>70
+                                    Porsi Gulai</b></li>
+                            <li class="mt-2"><i
+                                    class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis
+                                Antar</li>
+                            <li class="mt-2"><i
+                                    class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis
+                                Distribusi</li>
+                            <li class="mt-2"><i
+                                    class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>+
+                                Sertifikat Aqiqah</li>
+                            <li class="mt-2"><i
+                                    class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>+ Risalah
+                                Aqiqah</li>
+                        </ul>
+                        <center>
+                            <a href="" class="btn btn-sm btn-primary mt-3">PESAN</a>
+                        </center>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="price-item shadow-sm overflow-hidden mt-4 mt-lg-0">
+                    <div class="price-up-box p-4">
+                        <div class="badge bg-primary fw-normal f-14">Paket H</div>
+                        <div class="price-tag mt-2">
+                            <h2 class="text-dark mb-0 f-40"><sup class="f-22 fw-normal">Rp.</sup>3,000</h2>
+                        </div>
+                        <p class="text-dark-50 mb-0">Kambing Jantan</p>
+                    </div>
+                    <div class="border border-3"></div>
+
+                    <div class="price-down-box p-4">
+                        <ul class="list-unstyled ">
+                            <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>500 Sate
+                                    Tusuk</b></li>
+                            <li class="mt-2"><i
+                                    class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>80
+                                    Porsi Gulai</b></li>
+                            <li class="mt-2"><i
+                                    class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis
+                                Antar</li>
+                            <li class="mt-2"><i
+                                    class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis
+                                Distribusi</li>
+                            <li class="mt-2"><i
+                                    class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>+
+                                Sertifikat Aqiqah</li>
+                            <li class="mt-2"><i
+                                    class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>+ Risalah
+                                Aqiqah</li>
+                        </ul>
+                        <center>
+                            <a href="" class="btn btn-sm btn-primary mt-3">PESAN</a>
+                        </center>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button bg-dark text-white" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        Paket Nasi Kotak Menu A
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <center>
+                                            <p>
+                                                Nasi Putih
+                                                <br>
+                                                Sayur/Acar
+                                                <br>
+                                                Buah
+                                                <br>
+                                                &nbsp;
+                                                <br>
+                                                &nbsp;
+                                                <br>
+                                                &nbsp;
+                                                <br>
+                                                &nbsp;
+                                            </p>
+                                            <span class="badge bg-warning text-dark">Rp. 13.000,-</span>
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button bg-dark text-white" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true"
+                                        aria-controls="collapseTwo">
+                                        Paket Nasi Kotak Menu B
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <center>
+                                            <p>
+                                                Nasi Putih
+                                                <br>
+                                                Sayur/Acar
+                                                <br>
+                                                Buah
+                                                <br>
+                                                Kerupuk
+                                                <br>
+                                                Sambel
+                                                <br>
+                                                &nbsp;
+                                                <br>
+                                                &nbsp;
+                                            </p>
+                                            <span class="badge bg-warning text-dark">Rp. 14.500,-</span>
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button bg-dark text-white" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true"
+                                        aria-controls="collapseThree">
+                                        Paket Nasi Kotak Menu C
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <center>
+                                            <p>
+                                                Nasi Putih
+                                                <br>
+                                                Sayur/Acar
+                                                <br>
+                                                Buah
+                                                <br>
+                                                Kerupuk
+                                                <br>
+                                                Sambel + Telur
+                                                <br>
+                                                &nbsp;
+                                                <br>
+                                                &nbsp;
+                                            </p>
+                                            <span class="badge bg-warning text-dark">Rp. 17.500,-</span>
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button bg-dark text-white" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true"
+                                        aria-controls="collapseFour">
+                                        Paket Nasi Kotak Menu D
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <center>
+                                            <p>
+                                                Nasi Putih
+                                                <br>
+                                                Sayur/Acar
+                                                <br>
+                                                Buah
+                                                <br>
+                                                Kerupuk
+                                                <br>
+                                                Sambel Telur/Goreng Ati
+                                                <br>
+                                                Air Mineral
+                                                <br>
+                                                &nbsp;
+                                            </p>
+                                            <span class="badge bg-warning text-dark">Rp. 20.000,-</span>
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button bg-dark text-white" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true"
+                                        aria-controls="collapseFive">
+                                        Paket Nasi Kotak Menu E
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse"
+                                    aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <center>
+                                            <p>
+                                                Nasi Putih
+                                                <br>
+                                                Sayur/Acar
+                                                <br>
+                                                Buah
+                                                <br>
+                                                Kerupuk
+                                                <br>
+                                                Sambel Telur/Goreng Ati
+                                                <br>
+                                                Air Mineral
+                                                <br>
+                                                Masakan Ayam (isi di Form)
+                                            </p>
+                                            <span class="badge bg-warning text-dark">Rp. 25.000,-</span>
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
     <!-- end pricing -->
@@ -930,12 +1308,12 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="title text-center mb-5">
-                        <h6 class="mb-0 fw-bold text-primary">App Screen!</h6>
-                        <h2 class="f-40">Show our App Screenshots!</h2>
-                        <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eos
+                        {{-- <h6 class="mb-0 fw-bold text-primary">App Screen!</h6> --}}
+                        <h2 class="f-40">Testimoni</h2>
+                        {{-- <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eos
                             <br>
                             inventore omnis aliquid rerum alias molestias.
-                        </p>
+                        </p> --}}
                     </div>
                 </div>
             </div>
