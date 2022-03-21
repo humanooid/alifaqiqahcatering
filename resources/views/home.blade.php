@@ -153,9 +153,9 @@
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
-                <div class="ms-auto">
+                {{-- <div class="ms-auto">
                     <a href="" class="btn bg-gradiant">Login</a>
-                </div>
+                </div> --}}
             </div>
         </div>
     </nav>
@@ -201,7 +201,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="title text-center mb-5">
-                        {{-- <h6 class="mb-0 fw-bold text-primary">What We Do?</h6> --}}
+                        <h6 class="mb-0 fw-bold text-primary">Kenapa Memilih Kami?</h6>
                         <h2 class="f-40">Layanan Aqiqah & Catering Kami</h2>
                         {{-- <div class="border-phone">
                             <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eos
@@ -369,7 +369,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="title text-center mb-5">
-                        {{-- <h6 class="mb-0 fw-bold text-primary">AppTech Features</h6> --}}
+                        <h6 class="mb-0 fw-bold text-primary">Kenapa Perlu Aqiqah?</h6>
                         <h2 class="f-40">Dalil Aqiqah</h2>
                         <p class="text-muted">
                         <h4>
@@ -791,7 +791,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="title text-center mb-5">
-                        {{-- <h6 class="mb-0 fw-bold text-primary">What's Your Price!</h6> --}}
+                        <h6 class="mb-0 fw-bold text-primary">Paketnya Apa Saja?</h6>
                         <h2 class="f-40">Pilihan Paket</h2>
                         {{-- <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eos
                             inventore omnis aliquid rerum alias molestias.</p> --}}
@@ -806,7 +806,7 @@
                         <div class="price-up-box p-4">
                             <div class="badge bg-primary fw-normal f-14">Paket A</div>
                             <div class="price-tag mt-2">
-                                <h2 class="text-dark mb-0 f-40"><sup class="f-22 fw-normal">Rp.</sup>1,400</h2>
+                                <h2 class="text-dark mb-0 f-40"><sup class="f-22 fw-normal">IDR</sup>1,400</h2>
                             </div>
                             <p class="text-dark-50 mb-0">Domba Betina</p>
                         </div>
@@ -843,7 +843,7 @@
                         <div class="price-up-box p-4">
                             <div class="badge bg-primary fw-normal f-14">Paket B</div>
                             <div class="price-tag mt-2">
-                                <h2 class="text-dark mb-0 f-40"><sup class="f-22 fw-normal">Rp.</sup>1,500</h2>
+                                <h2 class="text-dark mb-0 f-40"><sup class="f-22 fw-normal">IDR</sup>1,500</h2>
                             </div>
                             <p class="text-dark-50 mb-0">Domba Betina</p>
                         </div>
@@ -883,7 +883,7 @@
                         <div class="price-up-box active p-4">
                             <div class="badge bg-primary fw-normal f-14">Paket C</div>
                             <div class="price-tag mt-2">
-                                <h2 class="text-white mb-0 f-40"><sup class="f-22 fw-normal">Rp.</sup>1,700</h2>
+                                <h2 class="text-white mb-0 f-40"><sup class="f-22 fw-normal">IDR</sup>1,700</h2>
                             </div>
                             <p class="text-white-50 mb-0">Kambing Betina</p>
                         </div>
@@ -920,7 +920,7 @@
                         <div class="price-up-box p-4">
                             <div class="badge bg-primary fw-normal f-14">Paket D</div>
                             <div class="price-tag mt-2">
-                                <h2 class="text-dark mb-0 f-40"><sup class="f-22 fw-normal">Rp.</sup>2,000</h2>
+                                <h2 class="text-dark mb-0 f-40"><sup class="f-22 fw-normal">IDR</sup>2,000</h2>
                             </div>
                             <p class="text-dark-50 mb-0">Kambing Betina</p>
                         </div>
@@ -957,7 +957,7 @@
                         <div class="price-up-box p-4">
                             <div class="badge bg-primary fw-normal f-14">Paket E</div>
                             <div class="price-tag mt-2">
-                                <h2 class="text-dark mb-0 f-40"><sup class="f-22 fw-normal">Rp.</sup>2,350</h2>
+                                <h2 class="text-dark mb-0 f-40"><sup class="f-22 fw-normal">IDR</sup>2,350</h2>
                             </div>
                             <p class="text-dark-50 mb-0">Kambing Betina</p>
                         </div>
@@ -1020,7 +1020,7 @@
                     <div class="price-up-box p-4">
                         <div class="badge bg-primary fw-normal f-14">Paket F</div>
                         <div class="price-tag mt-2">
-                            <h2 class="text-dark mb-0 f-40"><sup class="f-22 fw-normal">Rp.</sup>2,500</h2>
+                            <h2 class="text-dark mb-0 f-40"><sup class="f-22 fw-normal">IDR</sup>2,500</h2>
                         </div>
                         <p class="text-dark-50 mb-0">Kambing Jantan</p>
                     </div>
@@ -1057,7 +1057,7 @@
                     <div class="price-up-box p-4">
                         <div class="badge bg-primary fw-normal f-14">Paket G</div>
                         <div class="price-tag mt-2">
-                            <h2 class="text-dark mb-0 f-40"><sup class="f-22 fw-normal">Rp.</sup>2,750</h2>
+                            <h2 class="text-dark mb-0 f-40"><sup class="f-22 fw-normal">IDR</sup>2,750</h2>
                         </div>
                         <p class="text-dark-50 mb-0">Kambing Jantan</p>
                     </div>
@@ -1094,7 +1094,7 @@
                     <div class="price-up-box p-4">
                         <div class="badge bg-primary fw-normal f-14">Paket H</div>
                         <div class="price-tag mt-2">
-                            <h2 class="text-dark mb-0 f-40"><sup class="f-22 fw-normal">Rp.</sup>3,000</h2>
+                            <h2 class="text-dark mb-0 f-40"><sup class="f-22 fw-normal">IDR</sup>3,000</h2>
                         </div>
                         <p class="text-dark-50 mb-0">Kambing Jantan</p>
                     </div>
@@ -1295,7 +1295,39 @@
                 </div>
             </div>
         </div>
+
+        <div class="container-fluid mt-5 mb-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-12 bg-dark py-3">
+                            <div class="title float-start">
+                                <h4 class="text-white">PAKET LIVEGRILL & LIVESTOCK</h4>
+                                <p class="text-white">Kambing Guling, Bakar Lezat Plus Layanan Masak<br>Kambing
+                                    Hidup yang sehat dan bobot berkualitas</p>
+                            </div>
+                            <button class="btn btn-muted float-end">Pesan Sekarang</button>
+                            <h3><span class="badge bg-light text-danger position-absolute"
+                                    style="bottom: -20px; left: 10px; z-index: 99;">IDR 2,000</span></h3>
+                        </div>
+                        <div class="col-12 p-0">
+                            <img class="img-fluid"
+                                src="../../Kambing-Guling-bakar-murah-Alif-Aqiqah-Catering-Pangkalpinang.jpg"
+                                alt="Kambing-Guling-bakar-murah-Alif-Aqiqah-Catering-Pangkalpinang" style="width: 100%">
+                        </div>
+                        <div class="col-12 text-center pt-5">
+                            <div class="title">
+                                <h4 class="text-primary">Aqiqah 1x Seumur Hidup</h4>
+                                <p class="text-danger">"Menyebarkan syi'ar aqiqah, usaha menambah bekal akherat
+                                    anda"</p>
+                                <p class="text-muted">(www.alifaqiqahcatering.com)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
     </section>
     <!-- end pricing -->
 
@@ -1308,7 +1340,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="title text-center mb-5">
-                        {{-- <h6 class="mb-0 fw-bold text-primary">App Screen!</h6> --}}
+                        <h6 class="mb-0 fw-bold text-primary">Apa Kata Pelanggan?</h6>
                         <h2 class="f-40">Testimoni</h2>
                         {{-- <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eos
                             <br>
@@ -1690,15 +1722,35 @@
         <!-- container -->
         <div class="container">
             <div class="row ">
-                <div class="col-lg-4">
+                <div class="col-lg-6">
                     <a class="navbar-brand logo text-uppercase" href="index-1.html">
                         <img src="logo.png" class="logo-light" alt="" height="30">
                         <!-- <img src="images/logo-dark.png" class="logo-dark" alt="" height="28"> -->
                     </a>
-                    <p class="text-white-50 mt-2 mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Beatae,
-                        deserunt expedita! Id sit dicta quidem aperiam aut ad debitis numquam .</p>
-
+                    <p class="text-white-50 mt-2 mb-0">
+                        <b>PANGKALPINANG</b><br>
+                        0813 9549 3158 | 0852 0890 2234<br>Jalan Selangat Komplek Guru No. 2
+                        Selindung Baru
+                    </p>
+                    <p class="text-white-50 mt-2 mb-0">
+                        <b>SUNGAILIAT</b>
+                        <br>
+                        0812 71 777 43<br>
+                        Jalan Batin Tikal No. 59/127
+                        Senang Hati
+                    </p>
+                    <p class="text-white-50 mt-2 mb-0">
+                        <b>TOBOALI</b><br>
+                        0853 8367 4812<br>
+                        Gang Mawar
+                        Kelurahan Gadung
+                    </p>
+                    <p class="text-white-50 mt-2 mb-0">
+                        <b>KOBA</b><br>
+                        0852 7392 9997<br>
+                        Jl. Balai Desa Nibung RT.06
+                        Kelurahan Gadung
+                    </p>
                     <div class="footer-icon mt-4">
                         <div class=" d-flex align-items-center">
                             <a href="" class="me-2 avatar-sm text-center" data-bs-toggle="tooltip"
@@ -1718,45 +1770,42 @@
                                     data-bs-placement="top" title="linkedin"></i>
                             </a>
                         </div>
-
                     </div>
                 </div>
 
-                <div class="col-lg-2">
-                    <div class="text-start mt-4 mt-lg-0">
-                        <h5 class="text-white fw-bold">Product</h5>
-                        <ul class="footer-item list-unstyled footer-link mt-3">
-                            <li><a href="">Features</a></li>
-                            <li><a href="">Pricing</a></li>
-                            <li><a href="">Get App</a></li>
-                            <li><a href="">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-lg-2 ">
-                    <div class="text-start">
-                        <h5 class="text-white fw-bold">Policies</h5>
-                        <ul class="footer-item list-unstyled footer-link mt-3">
-                            <li><a href="">Security & Provciy</a></li>
-                            <li><a href="">Marketplace</a></li>
-                            <li><a href="">Term & Condition</a></li>
-                            <li><a href="">Collection</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <h5 class="text-white">Subscribe</h5>
-                    <div class="input-group my-4">
-                        <input type="text" class="form-control p-3" placeholder="subscribe" aria-label="subscribe"
-                            aria-describedby="basic-addon2">
-                        <a href="" style="background:#343a40;" class="input-group-text text-white px-4"
-                            id="basic-addon2">Go</a>
-                    </div>
-                    <p class="mb-0 text-white-50">publishes will show up in your Subscriptions feed. You may also
-                        start.
-                    </p>
+                <div class="col-lg-6">
+                    <h5 class="text-white">Contact Us</h5>
+                    <form>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="mb-3">
+                                    <label for="name" class="text-white form-label">Nama</label>
+                                    <input type="text" class="form-control" id="name" name="name">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="mb-3">
+                                    <label for="email" class="text-white form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" name="email">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="mb-3">
+                                    <label for="phone" class="text-white form-label">No Handphone</label>
+                                    <input type="number" class="form-control" id="phone" name="phone">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="mb-3">
+                                    <label for="message" class="text-white form-label">Pesan</label>
+                                    <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-muted float-end">Submit</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -1770,9 +1819,9 @@
                     <p class="mb-0 text-center text-muted">©
                         <script>
                             document.write(new Date().getFullYear())
-                        </script> Styza. Design with <i class="mdi mdi-heart text-danger"></i> by <a
-                            href="https://store.themesdesign.in" target="_blank"
-                            class="text-muted">Themesdesign.</a>
+                        </script> alifaqiqahcatering. Made with <i class="mdi mdi-brain text-pink"></i> by <a
+                            href="#" target="_blank"
+                            class="text-muted">Creative Pro.</a>
                     </p>
                 </div>
             </div>
