@@ -33,6 +33,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <style>
+        body[data-layout-mode=dark] .accordion .accordion-body {
+            background-color: #343f4b !important;
+        }
+
+        body[data-layout-mode=dark] .accordion .accordion-body p {
+            color: #ffffff !important;
+        }
+
         .text-gradiant {
             background: -webkit-linear-gradient(#00613A, #005734);
             -webkit-background-clip: text;
@@ -214,7 +222,7 @@
 
             <div class="row justify-content-between">
                 <div class="col-lg-3">
-                    <div class="service-box text-center">
+                    <div class="service-box text-center shadow">
                         <div class="service-icon p-4"
                             style="background-repeat: no-repeat; background-position: center;">
                             <i class="mdi mdi-shield-check-outline text-gradiant f-30"></i>
@@ -287,7 +295,7 @@
                 </div>
 
                 <div class="col-lg-3 pt-4 pt-lg-0">
-                    <div class="service-box text-center">
+                    <div class="service-box text-center shadow">
                         <div class="service-icon p-4"
                             style="background-repeat: no-repeat; background-position: center;">
                             <i class="mdi mdi-silverware-fork-knife text-gradiant f-30"></i>
@@ -325,7 +333,7 @@
                 </div>
 
                 <div class="col-lg-3 pt-4 pt-lg-0">
-                    <div class="service-box text-center">
+                    <div class="service-box text-center shadow">
                         <div class="service-icon p-4"
                             style="background-repeat: no-repeat; background-position: center;">
                             <i class="mdi mdi-human-handsup text-gradiant f-30"></i>
@@ -802,7 +810,7 @@
 
             <div class="row align-items-center justify-content-center">
                 <div class="col-lg-2">
-                    <div class="price-item shadow-sm overflow-hidden">
+                    <div class="price-item shadow overflow-hidden">
                         <div class="price-up-box p-4">
                             <div class="badge bg-primary fw-normal f-14">Paket A</div>
                             <div class="price-tag mt-2">
@@ -839,7 +847,7 @@
                     </div>
                 </div>
                 <div class="col-lg-2">
-                    <div class="price-item shadow-sm overflow-hidden mt-4 mt-lg-0">
+                    <div class="price-item shadow overflow-hidden mt-4 mt-lg-0">
                         <div class="price-up-box p-4">
                             <div class="badge bg-primary fw-normal f-14">Paket B</div>
                             <div class="price-tag mt-2">
@@ -876,7 +884,7 @@
                     </div>
                 </div>
                 <div class="col-lg-2">
-                    <div class="price-item shadow-sm overflow-hidden mt-4 mt-lg-0">
+                    <div class="price-item shadow overflow-hidden mt-4 mt-lg-0">
                         <div class="topbar-header bg-danger py-2 text-center">
                             <h6 class="mb-0 text-white fw-normal"><b>Hot Price!</b></h6>
                         </div>
@@ -916,7 +924,7 @@
                     </div>
                 </div>
                 <div class="col-lg-2">
-                    <div class="price-item shadow-sm overflow-hidden mt-4 mt-lg-0">
+                    <div class="price-item shadow overflow-hidden mt-4 mt-lg-0">
                         <div class="price-up-box p-4">
                             <div class="badge bg-primary fw-normal f-14">Paket D</div>
                             <div class="price-tag mt-2">
@@ -953,7 +961,7 @@
                     </div>
                 </div>
                 <div class="col-lg-2">
-                    <div class="price-item shadow-sm overflow-hidden mt-4 mt-lg-0">
+                    <div class="price-item shadow overflow-hidden mt-4 mt-lg-0">
                         <div class="price-up-box p-4">
                             <div class="badge bg-primary fw-normal f-14">Paket E</div>
                             <div class="price-tag mt-2">
@@ -1016,7 +1024,7 @@
 
         <div class="row align-items-center justify-content-center">
             <div class="col-lg-2">
-                <div class="price-item shadow-sm overflow-hidden">
+                <div class="price-item shadow overflow-hidden">
                     <div class="price-up-box p-4">
                         <div class="badge bg-primary fw-normal f-14">Paket F</div>
                         <div class="price-tag mt-2">
@@ -1053,7 +1061,7 @@
                 </div>
             </div>
             <div class="col-lg-2">
-                <div class="price-item shadow-sm overflow-hidden mt-4 mt-lg-0">
+                <div class="price-item shadow overflow-hidden mt-4 mt-lg-0">
                     <div class="price-up-box p-4">
                         <div class="badge bg-primary fw-normal f-14">Paket G</div>
                         <div class="price-tag mt-2">
@@ -1090,7 +1098,7 @@
                 </div>
             </div>
             <div class="col-lg-2">
-                <div class="price-item shadow-sm overflow-hidden mt-4 mt-lg-0">
+                <div class="price-item shadow overflow-hidden mt-4 mt-lg-0">
                     <div class="price-up-box p-4">
                         <div class="badge bg-primary fw-normal f-14">Paket H</div>
                         <div class="price-tag mt-2">
@@ -1129,7 +1137,7 @@
             <div class="col-lg-4">
                 <div class="row align-items-center justify-content-center">
                     <div class="col-lg-8">
-                        <div class="accordion" id="accordionExample">
+                        <div class="accordion shadow" id="accordionExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingOne">
                                     <button class="accordion-button bg-dark text-white" type="button"
@@ -1300,7 +1308,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="row">
-                        <div class="col-12 bg-dark py-3">
+                        <div class="col-12 bg-dark py-3 rounded-top shadow">
                             <div class="title float-start">
                                 <h4 class="text-white">PAKET LIVEGRILL & LIVESTOCK</h4>
                                 <p class="text-white">Kambing Guling, Bakar Lezat Plus Layanan Masak<br>Kambing
@@ -1310,11 +1318,13 @@
                             <h3><span class="badge bg-light text-danger position-absolute"
                                     style="bottom: -20px; left: 10px; z-index: 99;">IDR 2,000</span></h3>
                         </div>
-                        <div class="col-12 p-0">
-                            <img class="img-fluid"
+                        <div class="col-12 p-0 shadow">
+                            <img class="img-fluid rounded-bottom"
                                 src="../../Kambing-Guling-bakar-murah-Alif-Aqiqah-Catering-Pangkalpinang.jpg"
                                 alt="Kambing-Guling-bakar-murah-Alif-Aqiqah-Catering-Pangkalpinang" style="width: 100%">
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-12 text-center pt-5">
                             <div class="title">
                                 <h4 class="text-primary">Aqiqah 1x Seumur Hidup</h4>
@@ -1819,9 +1829,8 @@
                     <p class="mb-0 text-center text-muted">©
                         <script>
                             document.write(new Date().getFullYear())
-                        </script> alifaqiqahcatering. Made with <i class="mdi mdi-brain text-pink"></i> by <a
-                            href="#" target="_blank"
-                            class="text-muted">Creative Pro.</a>
+                        </script> alifaqiqahcatering. Made with <i class="mdi mdi-brain text-pink"></i>
+                        by <a href="#" target="_blank" class="text-muted">Creative Pro.</a>
                     </p>
                 </div>
             </div>
@@ -1831,7 +1840,7 @@
 
 
     <!-- Style switcher -->
-    <div class="style-switcher" id="style-switcher" onclick="toggleSwitcher()" style="left: -189px;">
+    {{-- <div class="style-switcher" id="style-switcher" onclick="toggleSwitcher()" style="left: -189px;">
         <div>
             <h6>Select your color</h6>
             <ul class="pattern list-unstyled mb-0">
@@ -1850,7 +1859,7 @@
             <a href="javascript: void(0);" class="settings rounded-end"><i class="uil uil-setting text-white"
                     style="display: inline; line-height: 46px;"></i></a>
         </div>
-    </div>
+    </div> --}}
     <!-- end switcher-->
 
 
@@ -1881,6 +1890,13 @@
             $("#service2").slideUp();
             $("#service3").slideUp();
             $("#service4").slideUp();
+
+            let theme = localStorage.getItem("theme");
+            if (theme == "light" || theme == "") {
+                document.body.removeAttribute("data-layout-mode");
+            } else {
+                document.body.setAttribute("data-layout-mode", "dark");
+            }
         })
 
         function expandService(el, id) {
