@@ -1447,12 +1447,12 @@ Gratis Antar Wil. Pangkalpinang dan Sekitarnya*</li>
             $("#service3").slideUp();
             $("#service4").slideUp();
 
-            let theme = localStorage.getItem("theme");
-            if (theme == "light" || theme == "") {
-                document.body.removeAttribute("data-layout-mode");
-            } else {
-                document.body.setAttribute("data-layout-mode", "dark");
-            }
+            //let theme = localStorage.getItem("theme");
+            //if (theme == "light" || theme == "") {
+            //    document.body.removeAttribute("data-layout-mode");
+            //} else {
+            //    document.body.setAttribute("data-layout-mode", "dark");
+            //}
         })
 
         function expandService(el, id) {
