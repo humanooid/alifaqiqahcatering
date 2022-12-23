@@ -21,8 +21,8 @@ window.addEventListener("scroll", (ev) => {
 /********************* light-dark js ************************/
 //
 
-const btn = document.getElementById("mode");
-btn.addEventListener("click", (e) => {
+// const btn = document.getElementById("mode");
+// btn.addEventListener("click", (e) => {
 //     let theme = localStorage.getItem("theme");
 //     if (theme == "light" || theme == "") {
 //         document.body.setAttribute("data-layout-mode", "dark");
@@ -31,7 +31,7 @@ btn.addEventListener("click", (e) => {
 //         document.body.removeAttribute("data-layout-mode");
 //         localStorage.setItem("theme", "light");
 //     }
-});
+// });
 
 //
 /********************* Swicher js ************************/
