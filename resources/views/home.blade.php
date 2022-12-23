@@ -26,6 +26,7 @@
 
     <!-- Custom Css -->
     <link rel="stylesheet" href="../../css/style.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/custom.css" type="text/css" />
 
     <!-- colors -->
     <link href="../../css/colors/default.css" rel="stylesheet" type="text/css" id="color-opt" />
@@ -109,7 +110,6 @@
             background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
             transform: rotate(-180deg)
         }
-
     </style>
 
 </head>
@@ -117,9 +117,9 @@
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="71">
 
     <!-- light-dark mode button -->
-    <a href="javascript: void(0);" id="mode" class="mode-btn text-white rounded-end">
-        <i class="uil uil-brightness mode-dark mx-auto"></i>
-        <i class="uil uil-moon bx-spin mode-light"></i>
+    <a href="javascript: void(0);" id="mode">
+        <!-- <i class="uil uil-brightness mode-dark mx-auto"></i>
+        <i class="uil uil-moon bx-spin mode-light"></i> -->
     </a>
 
     <!-- START  NAVBAR -->
@@ -132,8 +132,7 @@
                 <img src="alifaqiqah logo.png" class="logo-dark" alt="" height="30">
             </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="mdi mdi-menu"></span>
             </button>
 
@@ -153,9 +152,6 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#app">Testimoni</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#team">Team</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
@@ -179,15 +175,15 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     {{-- <img src="images/baby-phone.png" alt="" class="img-fluid mb-4 smallphone-image"> --}}
-                    <h1 class="display-5 fw-bold mt-5">Aqiqah anak terbaik dengan paket harga yang tepat.</h1>
-                    <p class="mt-4 text-muted">Pangkalpinang - Toboali - Sungailiat - Koba</p>
+                    <h1 class="display-5 fw-bold mt-5">Aqiqah <span class="hashtag-text px-3">#terbaik</span> dengan paket harga yang tepat.</h1>
+                    <p class="mt-4 text-muted">Wilayah Pangkalpinang dan sekitarnya</p>
                     {{-- <button class="btn bg-gradiant mt-4">Read More</button> --}}
                 </div>
 
 
 
                 <div class="col-lg-6">
-                    <img src="home-left.png" alt="" class="img-fluid">
+                    <!-- <img src="home-left.png" alt="" class="img-fluid"> -->
                     {{-- <div class="up-botton-text d-flex align-items-center d-none d-md-block">
                         <h5>Welcome To Styza 🙋‍♀️</h5>
                     </div> --}}
@@ -204,7 +200,7 @@
 
 
     <!-- service section -->
-    <section class="section service bg-light" id="service">
+    <section class="section service" id="service">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
@@ -223,8 +219,7 @@
             <div class="row justify-content-between">
                 <div class="col-lg-3">
                     <div class="service-box text-center shadow">
-                        <div class="service-icon p-4"
-                            style="background-repeat: no-repeat; background-position: center;">
+                        <div class="service-icon p-4" style="background-repeat: no-repeat; background-position: center;">
                             <i class="mdi mdi-shield-check-outline text-gradiant f-30"></i>
                         </div>
 
@@ -260,8 +255,7 @@
 
                 <div class="col-lg-3 pt-4 pt-lg-0">
                     <div class="service-box text-center shadow">
-                        <div class="service-icon p-4"
-                            style="background-repeat: no-repeat; background-position: center;">
+                        <div class="service-icon p-4" style="background-repeat: no-repeat; background-position: center;">
                             <i class="mdi mdi-clipboard-search-outline text-gradiant f-30"></i>
                         </div>
 
@@ -296,8 +290,7 @@
 
                 <div class="col-lg-3 pt-4 pt-lg-0">
                     <div class="service-box text-center shadow">
-                        <div class="service-icon p-4"
-                            style="background-repeat: no-repeat; background-position: center;">
+                        <div class="service-icon p-4" style="background-repeat: no-repeat; background-position: center;">
                             <i class="mdi mdi-silverware-fork-knife text-gradiant f-30"></i>
                         </div>
 
@@ -334,8 +327,7 @@
 
                 <div class="col-lg-3 pt-4 pt-lg-0">
                     <div class="service-box text-center shadow">
-                        <div class="service-icon p-4"
-                            style="background-repeat: no-repeat; background-position: center;">
+                        <div class="service-icon p-4" style="background-repeat: no-repeat; background-position: center;">
                             <i class="mdi mdi-human-handsup text-gradiant f-30"></i>
                         </div>
 
@@ -371,10 +363,10 @@
 
 
     <!-- start features -->
-    <div class="section features" id="features">
-        <!-- start container -->
-        <div class="container">
-            <div class="row justify-content-center">
+    <!-- <div class="section features" id="features">    -->
+    <!-- start container -->
+    <div class="container">
+        <!-- <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="title text-center mb-5">
                         <h6 class="mb-0 fw-bold text-primary">Kenapa Perlu Aqiqah?</h6>
@@ -398,9 +390,9 @@
                         </p>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
-            {{-- <div class="row justify-content-center">
+        {{-- <div class="row justify-content-center">
 
 
                 <div class="col-lg-12">
@@ -567,8 +559,8 @@
                     </div>
                 </div>
             </div> --}}
-        </div>
-        <!-- end container -->
+    </div>
+    <!-- end container -->
     </div>
     <!-- end features -->
 
@@ -794,7 +786,7 @@
 
 
     <!-- pricing section -->
-    <section class="section pricing" id="pricing">
+    <section class="section pricing  bg-light" id="pricing">
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
@@ -814,34 +806,24 @@
                         <div class="price-up-box p-4">
                             <div class="badge bg-primary fw-normal f-14">Paket A</div>
                             <div class="price-tag mt-2">
-                                <h2 class="text-dark mb-0 f-40"><sup class="f-22 fw-normal">IDR</sup>1,400</h2>
+                                <h2 class="text-light mb-0 f-40"><sup class="f-22 fw-normal">IDR</sup>1,850</h2>
                             </div>
-                            <p class="text-dark-50 mb-0">Domba Betina</p>
+                            <p class="text-white-50 mb-0">Domba Betina</p>
                         </div>
                         <div class="border border-3"></div>
 
                         <div class="price-down-box p-4">
                             <ul class="list-unstyled ">
-                                <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>150 Sate
-                                        Tusuk</b></li>
-                                <li class="mt-2"><i
-                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>40
-                                        Porsi Gulai</b></li>
-                                <li class="mt-2"><i
-                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis
-                                    Antar</li>
-                                <li class="mt-2"><i
-                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis
-                                    Distribusi</li>
-                                <li class="mt-2"><i
-                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>+
-                                    Sertifikat Aqiqah</li>
-                                <li class="mt-2"><i
-                                        class="mdi mdi-minus-circle f-20 align-middle me-2 text-danger"></i><s>+
-                                        Risalah Aqiqah</s></li>
+                                <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>200 Sate Tusuk</b></li>
+                                <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>50 Porsi Gulai</b></li>
+                                <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis Antar Wil. Pangkalpinang dan Sekitarnya*</li>
+                                <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis Distribusi</li>
+                                <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis Spanduk (Jika ada Acara)</li>
+                                <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis Tempelan Nama Anak untuk Nasi Kotak</li>
+                                <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>+Sertifikat Aqiqah</li>
                             </ul>
                             <center>
-                                <a href="" class="btn btn-sm btn-primary mt-3">PESAN</a>
+                                <a href="whatsapp://send?text=Assalamu'alaikum admin Alif Aqiqah, saya ingin pesan Aqiqah Paket A&phone=+6281395493158" class="btn btn-sm btn-primary mt-3">PESAN</a>
                             </center>
                         </div>
                     </div>
@@ -851,34 +833,24 @@
                         <div class="price-up-box p-4">
                             <div class="badge bg-primary fw-normal f-14">Paket B</div>
                             <div class="price-tag mt-2">
-                                <h2 class="text-dark mb-0 f-40"><sup class="f-22 fw-normal">IDR</sup>1,500</h2>
+                                <h2 class="text-white mb-0 f-40"><sup class="f-22 fw-normal">IDR</sup>2,000</h2>
                             </div>
-                            <p class="text-dark-50 mb-0">Domba Betina</p>
+                            <p class="text-white-50 mb-0">Domba Betina</p>
                         </div>
                         <div class="border border-3"></div>
 
                         <div class="price-down-box p-4">
                             <ul class="list-unstyled ">
-                                <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>200 Sate
-                                        Tusuk</b></li>
-                                <li class="mt-2"><i
-                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>45
-                                        Porsi Gulai</b></li>
-                                <li class="mt-2"><i
-                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis
-                                    Antar</li>
-                                <li class="mt-2"><i
-                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis
-                                    Distribusi</li>
-                                <li class="mt-2"><i
-                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>+
-                                    Sertifikat Aqiqah</li>
-                                <li class="mt-2"><i
-                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>+ Risalah
-                                    Aqiqah</li>
+                                <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>250 Sate Tusuk</b></li>
+                                <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>65 Porsi Gulai</b></li>
+                                <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis Antar Wil. Pangkalpinang dan Sekitarnya*</li>
+                                <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis Distribusi</li>
+                                <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis Spanduk (Jika ada Acara)</li>
+                                <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis Tempelan Nama Anak untuk Nasi Kotak</li>
+                                <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>+Sertifikat Aqiqah</li>
                             </ul>
                             <center>
-                                <a href="" class="btn btn-sm btn-primary mt-3">PESAN</a>
+                                <a href="whatsapp://send?text=Assalamu'alaikum admin Alif Aqiqah, saya ingin pesan Aqiqah Paket B&phone=+6281395493158" class="btn btn-sm btn-primary mt-3">PESAN</a>
                             </center>
                         </div>
                     </div>
@@ -886,12 +858,12 @@
                 <div class="col-lg-2">
                     <div class="price-item shadow overflow-hidden mt-4 mt-lg-0">
                         <div class="topbar-header bg-danger py-2 text-center">
-                            <h6 class="mb-0 text-white fw-normal"><b>Hot Price!</b></h6>
+                            <h6 class="mb-0 text-white fw-normal"><b>Harga Terbaik !</b></h6>
                         </div>
-                        <div class="price-up-box active p-4">
-                            <div class="badge bg-primary fw-normal f-14">Paket C</div>
+                        <div class="price-up-box bg-warning active p-4">
+                            <div class="badge bg-warning fw-normal f-14">Paket C</div>
                             <div class="price-tag mt-2">
-                                <h2 class="text-white mb-0 f-40"><sup class="f-22 fw-normal">IDR</sup>1,700</h2>
+                                <h2 class="text-white mb-0 f-40"><sup class="f-22 fw-normal">IDR</sup>2,200</h2>
                             </div>
                             <p class="text-white-50 mb-0">Kambing Betina</p>
                         </div>
@@ -899,26 +871,16 @@
 
                         <div class="price-down-box p-4">
                             <ul class="list-unstyled ">
-                                <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>250 Sate
-                                        Tusuk</b></li>
-                                <li class="mt-2"><i
-                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>50
-                                        Porsi Gulai</b></li>
-                                <li class="mt-2"><i
-                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis
-                                    Antar</li>
-                                <li class="mt-2"><i
-                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis
-                                    Distribusi</li>
-                                <li class="mt-2"><i
-                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>+
-                                    Sertifikat Aqiqah</li>
-                                <li class="mt-2"><i
-                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>+ Risalah
-                                    Aqiqah</li>
+                                <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>350 Sate Tusuk</b></li>
+                                <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>80 Porsi Gulai</b></li>
+                                <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis Antar Wil. Pangkalpinang dan Sekitarnya*</li>
+                                <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis Distribusi</li>
+                                <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis Spanduk (Jika ada Acara)</li>
+                                <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis Tempelan Nama Anak untuk Nasi Kotak</li>
+                                <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>+Sertifikat Aqiqah</li>
                             </ul>
                             <center>
-                                <a href="" class="btn btn-sm btn-primary mt-3">PESAN</a>
+                                <a href="whatsapp://send?text=Assalamu'alaikum admin Alif Aqiqah, saya ingin pesan Aqiqah Paket C&phone=+6281395493158" class="btn btn-sm btn-primary mt-3">PESAN</a>
                             </center>
                         </div>
                     </div>
@@ -928,34 +890,24 @@
                         <div class="price-up-box p-4">
                             <div class="badge bg-primary fw-normal f-14">Paket D</div>
                             <div class="price-tag mt-2">
-                                <h2 class="text-dark mb-0 f-40"><sup class="f-22 fw-normal">IDR</sup>2,000</h2>
+                                <h2 class="text-white mb-0 f-40"><sup class="f-22 fw-normal">IDR</sup>2,650</h2>
                             </div>
-                            <p class="text-dark-50 mb-0">Kambing Betina</p>
+                            <p class="text-white-50 mb-0">Kambing Betina</p>
                         </div>
                         <div class="border border-3"></div>
 
                         <div class="price-down-box p-4">
                             <ul class="list-unstyled ">
-                                <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>300 Sate
-                                        Tusuk</b></li>
-                                <li class="mt-2"><i
-                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>60
-                                        Porsi Gulai</b></li>
-                                <li class="mt-2"><i
-                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis
-                                    Antar</li>
-                                <li class="mt-2"><i
-                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis
-                                    Distribusi</li>
-                                <li class="mt-2"><i
-                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>+
-                                    Sertifikat Aqiqah</li>
-                                <li class="mt-2"><i
-                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>+ Risalah
-                                    Aqiqah</li>
+                                <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>500 Sate Tusuk</b></li>
+                                <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>100 Porsi Gulai</b></li>
+                                <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis Antar Wil. Pangkalpinang dan Sekitarnya*</li>
+                                <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis Distribusi</li>
+                                <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis Spanduk (Jika ada Acara)</li>
+                                <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis Tempelan Nama Anak untuk Nasi Kotak</li>
+                                <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>+Sertifikat Aqiqah</li>
                             </ul>
                             <center>
-                                <a href="" class="btn btn-sm btn-primary mt-3">PESAN</a>
+                                <a href="whatsapp://send?text=Assalamu'alaikum admin Alif Aqiqah, saya ingin pesan Aqiqah Paket D&phone=+6281395493158" class="btn btn-sm btn-primary mt-3">PESAN</a>
                             </center>
                         </div>
                     </div>
@@ -965,41 +917,126 @@
                         <div class="price-up-box p-4">
                             <div class="badge bg-primary fw-normal f-14">Paket E</div>
                             <div class="price-tag mt-2">
-                                <h2 class="text-dark mb-0 f-40"><sup class="f-22 fw-normal">IDR</sup>2,350</h2>
+                                <h2 class="text-white mb-0 f-40"><sup class="f-22 fw-normal">IDR</sup>2,800</h2>
                             </div>
-                            <p class="text-dark-50 mb-0">Kambing Betina</p>
+                            <p class="text-white-50 mb-0">Kambing Betina</p>
                         </div>
                         <div class="border border-3"></div>
 
                         <div class="price-down-box p-4">
                             <ul class="list-unstyled ">
-                                <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>500 Sate
-                                        Tusuk</b></li>
-                                <li class="mt-2"><i
-                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>80
-                                        Porsi Gulai</b></li>
-                                <li class="mt-2"><i
-                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis
-                                    Antar</li>
-                                <li class="mt-2"><i
-                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis
-                                    Distribusi</li>
-                                <li class="mt-2"><i
-                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>+
-                                    Sertifikat Aqiqah</li>
-                                <li class="mt-2"><i
-                                        class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>+ Risalah
-                                    Aqiqah</li>
+                                <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>300 Sate Tusuk</b></li>
+                                <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>70 Porsi Gulai</b></li>
+                                <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis Antar Wil. Pangkalpinang dan Sekitarnya*</li>
+                                <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis Distribusi</li>
+                                <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis Spanduk (Jika ada Acara)</li>
+                                <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis Tempelan Nama Anak untuk Nasi Kotak</li>
+                                <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>+Sertifikat Aqiqah</li>
                             </ul>
                             <center>
-                                <a href="" class="btn btn-sm btn-primary mt-3">PESAN</a>
+                                <a href="whatsapp://send?text=Assalamu'alaikum admin Alif Aqiqah, saya ingin pesan Aqiqah Paket E&phone=+6281395493158" class="btn btn-sm btn-primary mt-3">PESAN</a>
                             </center>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <br>
+
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-2">
+                    <div class="price-item shadow overflow-hidden">
+                        <div class="price-up-box p-4">
+                            <div class="badge bg-primary fw-normal f-14">Paket F</div>
+                            <div class="price-tag mt-2">
+                                <h2 class="text-white mb-0 f-40"><sup class="f-22 fw-normal">IDR</sup>3,000</h2>
+                            </div>
+                            <p class="text-white-50 mb-0">Kambing Jantan</p>
+                        </div>
+                        <div class="border border-3"></div>
+
+                        <div class="price-down-box p-4">
+                            <ul class="list-unstyled ">
+                                <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>350 Sate Tusuk</b></li>
+                                <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>85 Porsi Gulai</b></li>
+                                <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis Gratis Antar Wil. Pangkalpinang dan Sekitarnya*</li>
+                                <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis Distribusi</li>
+                                <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis Spanduk (Jika ada Acara)</li>
+                                <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis Tempelan Nama Anak untuk Nasi Kotak</li>
+                                <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>+Sertifikat Aqiqah</li>
+                            </ul>
+                            <center>
+                                <a href="whatsapp://send?text=Assalamu'alaikum admin Alif Aqiqah, saya ingin pesan Aqiqah Paket F&phone=+6281395493158" class="btn btn-sm btn-primary mt-3">PESAN</a>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="price-item shadow overflow-hidden mt-4 mt-lg-0">
+                        <div class="price-up-box p-4">
+                            <div class="badge bg-primary fw-normal f-14">Paket G</div>
+                            <div class="price-tag mt-2">
+                                <h2 class="text-white mb-0 f-40"><sup class="f-22 fw-normal">IDR</sup>3.300</h2>
+                            </div>
+                            <p class="text-white-50 mb-0">Kambing Jantan</p>
+                        </div>
+                        <div class="border border-3"></div>
+
+                        <div class="price-down-box p-4">
+                            <ul class="list-unstyled ">
+                                <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>500 Sate Tusuk</b></li>
+                                <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>100 Porsi Gulai</b></li>
+                                <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis Gratis Antar Wil. Pangkalpinang dan Sekitarnya*</li>
+                                <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis Distribusi</li>
+                                <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis Spanduk (Jika ada Acara)</li>
+                                <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis Tempelan Nama Anak untuk Nasi Kotak</li>
+                                <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>+ Sertifikat Aqiqah</li>
+                            </ul>
+                            <center>
+                                <a href="whatsapp://send?text=Assalamu'alaikum admin Alif Aqiqah, saya ingin pesan Aqiqah Paket G&phone=+6281395493158" class="btn btn-sm btn-primary mt-3">PESAN</a>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-2">
+                <div class="price-item shadow overflow-hidden mt-4 mt-lg-0">
+                    <div class="price-up-box p-4">
+                        <div class="badge bg-primary fw-normal f-14">Paket H</div>
+                        <div class="price-tag mt-2">
+                            <h2 class="text-white mb-0 f-40"><sup class="f-22 fw-normal">IDR</sup>3,000</h2>
+                        </div>
+                        <p class="text-white-50 mb-0">Kambing Jantan</p>
+                    </div>
+                    <div class="border border-3"></div>
+
+                    <div class="price-down-box p-4">
+                        <ul class="list-unstyled ">
+                            <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>500 Sate
+                                    Tusuk</b></li>
+                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>80
+                                    Porsi Gulai</b></li>
+                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis
+Gratis Antar Wil. Pangkalpinang dan Sekitarnya*</li>
+                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis
+                                Distribusi</li>
+                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>+
+                                Sertifikat Aqiqah</li>
+                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>+ Risalah
+                                Aqiqah</li>
+                        </ul>
+                        <center>
+                            <a href="whatsapp://send?text=Assalamu'alaikum admin Alif Aqiqah, saya ingin pesan Aqiqah Paket H&phone=+6281395493158" class="btn btn-sm btn-primary mt-3">PESAN</a>
+                        </center>
+                    </div>
+                </div>
+            </div> -->
+            </div>
+
         </div>
-        <div class="container-fluid mt-5 mb-5">
+
+        <br>
+
+        <!-- <div class="container-fluid mt-5 mb-5">
             <div class="row justify-content-center">
                 <div class="col-lg-6 bg-muted pt-3" style="height: 110px">
                     <div class="title">
@@ -1020,331 +1057,162 @@
                     <button class="btn btn-sm btn-orange float-end mb-3">Pesan</button>
                 </div>
             </div>
-        </div>
+        </div> -->
 
-        <div class="row align-items-center justify-content-center">
-            <div class="col-lg-2">
-                <div class="price-item shadow overflow-hidden">
-                    <div class="price-up-box p-4">
-                        <div class="badge bg-primary fw-normal f-14">Paket F</div>
-                        <div class="price-tag mt-2">
-                            <h2 class="text-dark mb-0 f-40"><sup class="f-22 fw-normal">IDR</sup>2,500</h2>
+        <br>
+
+        <!-- Paket Nasi Kotak -->
+        <div class="col-lg-12 mt-5">
+            <div class="row align-items-center justify-content-center">
+
+                <div class="col-lg-4">
+                    <div class="accordion shadow" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button bg-warning text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Paket Nasi Kotak Menu A
+                                    <span class="badge bg-warning text-dark mx-2">Rp. 13.000,-</span>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <center>
+                                        <ul class="list-unstyled ">
+                                            <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Nasi Putih</li>
+                                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Sayur</li>
+                                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Acar</li>
+                                        </ul>
+                                    </center>
+                                </div>
+                            </div>
                         </div>
-                        <p class="text-dark-50 mb-0">Kambing Jantan</p>
-                    </div>
-                    <div class="border border-3"></div>
-
-                    <div class="price-down-box p-4">
-                        <ul class="list-unstyled ">
-                            <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>300 Sate
-                                    Tusuk</b></li>
-                            <li class="mt-2"><i
-                                    class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>60
-                                    Porsi Gulai</b></li>
-                            <li class="mt-2"><i
-                                    class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis
-                                Antar</li>
-                            <li class="mt-2"><i
-                                    class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis
-                                Distribusi</li>
-                            <li class="mt-2"><i
-                                    class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>+
-                                Sertifikat Aqiqah</li>
-                            <li class="mt-2"><i
-                                    class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>+ Risalah
-                                Aqiqah</li>
-                        </ul>
-                        <center>
-                            <a href="" class="btn btn-sm btn-primary mt-3">PESAN</a>
-                        </center>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button bg-warning text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                    Paket Nasi Kotak Menu B
+                                    <span class="badge bg-warning text-dark mx-2">Rp. 14.500,-</span>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <center>
+                                        <ul class="list-unstyled ">
+                                            <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Nasi Putih</li>
+                                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Sayur/Acar</li>
+                                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Buah</b></li>
+                                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Kerupuk</b></li>
+                                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Sambel</b></li>
+                                        </ul>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button bg-warning text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                    Paket Nasi Kotak Menu C
+                                    <span class="badge bg-warning text-dark mx-2">Rp. 17.500,-</span>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <center>
+                                        <ul class="list-unstyled ">
+                                            <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Nasi Putih</li>
+                                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Sayur/Acar</li>
+                                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Buah</li>
+                                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Kerupuk</li>
+                                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Sambel + Telur</b></li>
+                                        </ul>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button bg-warning text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                    Paket Nasi Kotak Menu D
+                                    <span class="badge bg-warning text-dark mx-2">Rp. 20.000,-</span>
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <center>
+                                        <ul class="list-unstyled ">
+                                            <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Nasi Putih</li>
+                                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Sayur/Acar</li>
+                                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Buah</li>
+                                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Kerupuk</li>
+                                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Sambel Telur dan Goreng Ati</b></li>
+                                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Air Mineral</b></li>
+                                        </ul>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button bg-warning text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                    Paket Nasi Kotak Menu E
+                                    <span class="badge bg-warning text-dark mx-2">Rp. 25.000,-</span>
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <center>
+                                        <ul class="list-unstyled ">
+                                            <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Nasi Putih</li>
+                                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Sayur/Acar</li>
+                                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Buah</li>
+                                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Kerupuk</li>
+                                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Sambel Telur/Goreng Ati</li>
+                                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Air Mineral</li>
+                                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Masakan Ayam (*Isi di Form) </b></li>
+                                        </ul>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-2">
-                <div class="price-item shadow overflow-hidden mt-4 mt-lg-0">
-                    <div class="price-up-box p-4">
-                        <div class="badge bg-primary fw-normal f-14">Paket G</div>
-                        <div class="price-tag mt-2">
-                            <h2 class="text-dark mb-0 f-40"><sup class="f-22 fw-normal">IDR</sup>2,750</h2>
-                        </div>
-                        <p class="text-dark-50 mb-0">Kambing Jantan</p>
-                    </div>
-                    <div class="border border-3"></div>
 
-                    <div class="price-down-box p-4">
-                        <ul class="list-unstyled ">
-                            <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>350 Sate
-                                    Tusuk</b></li>
-                            <li class="mt-2"><i
-                                    class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>70
-                                    Porsi Gulai</b></li>
-                            <li class="mt-2"><i
-                                    class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis
-                                Antar</li>
-                            <li class="mt-2"><i
-                                    class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis
-                                Distribusi</li>
-                            <li class="mt-2"><i
-                                    class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>+
-                                Sertifikat Aqiqah</li>
-                            <li class="mt-2"><i
-                                    class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>+ Risalah
-                                Aqiqah</li>
-                        </ul>
-                        <center>
-                            <a href="" class="btn btn-sm btn-primary mt-3">PESAN</a>
-                        </center>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2">
-                <div class="price-item shadow overflow-hidden mt-4 mt-lg-0">
-                    <div class="price-up-box p-4">
-                        <div class="badge bg-primary fw-normal f-14">Paket H</div>
-                        <div class="price-tag mt-2">
-                            <h2 class="text-dark mb-0 f-40"><sup class="f-22 fw-normal">IDR</sup>3,000</h2>
-                        </div>
-                        <p class="text-dark-50 mb-0">Kambing Jantan</p>
-                    </div>
-                    <div class="border border-3"></div>
+                <div class="col-lg-4 m-3">
+                    <div class="accordion shadow" id="accordionExample">
+                        <div class="accordion-item">
+                            <div class="row">
+                                <div class="bg-warning p-4 rounded-top shadow">
+                                    <div class="title float-start">
+                                        <h4 class="text-white">PAKET LIVEGRILL & LIVESTOCK</h4>
+                                        <hr class="mb-2">
+                                        <p class="text-white">Kambing Guling, Bakar Lezat Plus Layanan Masak, Kambing
+                                            Hidup yang sehat dan bobot berkualitas</p>
+                                    </div>
 
-                    <div class="price-down-box p-4">
-                        <ul class="list-unstyled ">
-                            <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>500 Sate
-                                    Tusuk</b></li>
-                            <li class="mt-2"><i
-                                    class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>80
-                                    Porsi Gulai</b></li>
-                            <li class="mt-2"><i
-                                    class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis
-                                Antar</li>
-                            <li class="mt-2"><i
-                                    class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis
-                                Distribusi</li>
-                            <li class="mt-2"><i
-                                    class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>+
-                                Sertifikat Aqiqah</li>
-                            <li class="mt-2"><i
-                                    class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>+ Risalah
-                                Aqiqah</li>
-                        </ul>
-                        <center>
-                            <a href="" class="btn btn-sm btn-primary mt-3">PESAN</a>
-                        </center>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="accordion shadow" id="accordionExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button bg-dark text-white" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                                        aria-controls="collapseOne">
-                                        Paket Nasi Kotak Menu A
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <center>
-                                            <p>
-                                                Nasi Putih
-                                                <br>
-                                                Sayur/Acar
-                                                <br>
-                                                Buah
-                                                <br>
-                                                &nbsp;
-                                                <br>
-                                                &nbsp;
-                                                <br>
-                                                &nbsp;
-                                                <br>
-                                                &nbsp;
-                                            </p>
-                                            <span class="badge bg-warning text-dark">Rp. 13.000,-</span>
-                                        </center>
-                                    </div>
+                                    <a href="whatsapp://send?text=Assalamu'alaikum admin Alif Aqiqah, saya ingin pesan Aqiqah PAKET LIVEGRILL & LIVESTOCK&phone=+6281395493158">
+                                        <button class="btn btn-muted float-end">PESAN
+                                        </button>
+                                    </a>
+                                    <h3><span class="badge bg-light text-danger position-absolute px-5" style="bottom: -20px; left: 10px; z-index: 99;">Mulai dari IDR 2,200</span></h3>
                                 </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button bg-dark text-white" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true"
-                                        aria-controls="collapseTwo">
-                                        Paket Nasi Kotak Menu B
-                                    </button>
-                                </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse show"
-                                    aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <center>
-                                            <p>
-                                                Nasi Putih
-                                                <br>
-                                                Sayur/Acar
-                                                <br>
-                                                Buah
-                                                <br>
-                                                Kerupuk
-                                                <br>
-                                                Sambel
-                                                <br>
-                                                &nbsp;
-                                                <br>
-                                                &nbsp;
-                                            </p>
-                                            <span class="badge bg-warning text-dark">Rp. 14.500,-</span>
-                                        </center>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button bg-dark text-white" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true"
-                                        aria-controls="collapseThree">
-                                        Paket Nasi Kotak Menu C
-                                    </button>
-                                </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse"
-                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <center>
-                                            <p>
-                                                Nasi Putih
-                                                <br>
-                                                Sayur/Acar
-                                                <br>
-                                                Buah
-                                                <br>
-                                                Kerupuk
-                                                <br>
-                                                Sambel + Telur
-                                                <br>
-                                                &nbsp;
-                                                <br>
-                                                &nbsp;
-                                            </p>
-                                            <span class="badge bg-warning text-dark">Rp. 17.500,-</span>
-                                        </center>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingFour">
-                                    <button class="accordion-button bg-dark text-white" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true"
-                                        aria-controls="collapseFour">
-                                        Paket Nasi Kotak Menu D
-                                    </button>
-                                </h2>
-                                <div id="collapseFour" class="accordion-collapse collapse"
-                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <center>
-                                            <p>
-                                                Nasi Putih
-                                                <br>
-                                                Sayur/Acar
-                                                <br>
-                                                Buah
-                                                <br>
-                                                Kerupuk
-                                                <br>
-                                                Sambel Telur/Goreng Ati
-                                                <br>
-                                                Air Mineral
-                                                <br>
-                                                &nbsp;
-                                            </p>
-                                            <span class="badge bg-warning text-dark">Rp. 20.000,-</span>
-                                        </center>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingFive">
-                                    <button class="accordion-button bg-dark text-white" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true"
-                                        aria-controls="collapseFive">
-                                        Paket Nasi Kotak Menu E
-                                    </button>
-                                </h2>
-                                <div id="collapseFive" class="accordion-collapse collapse"
-                                    aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <center>
-                                            <p>
-                                                Nasi Putih
-                                                <br>
-                                                Sayur/Acar
-                                                <br>
-                                                Buah
-                                                <br>
-                                                Kerupuk
-                                                <br>
-                                                Sambel Telur/Goreng Ati
-                                                <br>
-                                                Air Mineral
-                                                <br>
-                                                Masakan Ayam (isi di Form)
-                                            </p>
-                                            <span class="badge bg-warning text-dark">Rp. 25.000,-</span>
-                                        </center>
+                                <div class="col-12 p-0 shadow">
+                                    <div id="foto">
+                                        <img class="img-fluid rounded-bottom" src="../../images/foto.jpg" style="width: 100%">
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
-
-        <div class="container-fluid mt-5 mb-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="row">
-                        <div class="col-12 bg-dark py-3 rounded-top shadow">
-                            <div class="title float-start">
-                                <h4 class="text-white">PAKET LIVEGRILL & LIVESTOCK</h4>
-                                <p class="text-white">Kambing Guling, Bakar Lezat Plus Layanan Masak<br>Kambing
-                                    Hidup yang sehat dan bobot berkualitas</p>
-                            </div>
-                            <button class="btn btn-muted float-end">Pesan Sekarang</button>
-                            <h3><span class="badge bg-light text-danger position-absolute"
-                                    style="bottom: -20px; left: 10px; z-index: 99;">IDR 2,000</span></h3>
-                        </div>
-                        <div class="col-12 p-0 shadow">
-                            <img class="img-fluid rounded-bottom"
-                                src="../../Kambing-Guling-bakar-murah-Alif-Aqiqah-Catering-Pangkalpinang.jpg"
-                                alt="Kambing-Guling-bakar-murah-Alif-Aqiqah-Catering-Pangkalpinang" style="width: 100%">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 text-center pt-5">
-                            <div class="title">
-                                <h4 class="text-primary">Aqiqah 1x Seumur Hidup</h4>
-                                <p class="text-danger">"Menyebarkan syi'ar aqiqah, usaha menambah bekal akherat
-                                    anda"</p>
-                                <p class="text-muted">(www.alifaqiqahcatering.com)</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- end-section -->
 
     </section>
     <!-- end pricing -->
 
-
-
     <!-- slider section -->
-    <section class="section app-slider bg-light" id="app">
+    <section class="section app-slider" id="app">
         <!-- start container -->
         <div class="container">
             <div class="row justify-content-center">
@@ -1404,328 +1272,8 @@
     </section>
     <!-- end section -->
 
-
-
-    <!-- team section -->
-    <section class="section team" id="team">
-        <!-- start container -->
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="title text-center mb-5">
-                        <h6 class="mb-0 fw-bold text-primary">Oue Team!</h6>
-                        <h2 class="f-40">We are team!</h2>
-                        <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eos
-                            <br>
-                            inventore omnis aliquid rerum alias molestias.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row justify-content-center mt-4">
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-box text-end">
-                        <div class="row justify-content-end">
-                            <div class="col-lg-9 col-10">
-                                <div class="team-image">
-                                    <img src="images/team/img1.png" alt="" class="img-fluid">
-                                </div>
-                                <div class="team-icon ">
-                                    <div class="d-flex mt-2">
-                                        <div class="social-icon facebook mx-2">
-                                            <a href=""> <i class="mdi mdi-facebook f-20"></i></a>
-                                        </div>
-                                        <div class="social-icon instagram mx-2">
-                                            <a href=""><i class="mdi mdi-instagram f-20"></i></a>
-                                        </div>
-                                        <div class="social-icon twitter mx-2">
-                                            <a href=""><i class="mdi mdi-twitter f-20"></i></a>
-                                        </div>
-                                        <div class="social-icon linkedin mx-2">
-                                            <a href=""><i class="mdi mdi-linkedin f-20"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-info position-absolute">
-                            <h6>Cody Fisher <span class="f-14 text-muted fw-normal">/ owner</span></h6>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-box">
-                        <div class="row justify-content-end">
-                            <div class="col-lg-9 col-10">
-                                <div class="team-image text-end">
-                                    <img src="images/team/img4.png" alt="" class="img-fluid">
-                                </div>
-                                <div class="team-icon">
-                                    <div class="d-flex mt-2">
-                                        <div class="social-icon facebook mx-2">
-                                            <a href=""> <i class="mdi mdi-facebook f-20"></i></a>
-                                        </div>
-                                        <div class="social-icon instagram mx-2">
-                                            <a href=""><i class="mdi mdi-instagram f-20"></i></a>
-                                        </div>
-                                        <div class="social-icon twitter mx-2">
-                                            <a href=""><i class="mdi mdi-twitter f-20"></i></a>
-                                        </div>
-                                        <div class="social-icon linkedin mx-2">
-                                            <a href=""><i class="mdi mdi-linkedin f-20"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-info position-absolute">
-                            <h6>Emily Coper <span class="f-14 text-muted fw-normal">/ Desiger</span></h6>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-box">
-                        <div class="row justify-content-end">
-                            <div class="col-lg-9 col-10">
-                                <div class="team-image text-end">
-                                    <img src="images/team/img3.png" alt="" class="img-fluid">
-                                </div>
-                                <div class="team-icon">
-                                    <div class="d-flex mt-2">
-                                        <div class="social-icon facebook mx-2">
-                                            <a href=""> <i class="mdi mdi-facebook f-20"></i></a>
-                                        </div>
-                                        <div class="social-icon instagram mx-2">
-                                            <a href=""><i class="mdi mdi-instagram f-20"></i></a>
-                                        </div>
-                                        <div class="social-icon twitter mx-2">
-                                            <a href=""><i class="mdi mdi-twitter f-20"></i></a>
-                                        </div>
-                                        <div class="social-icon linkedin mx-2">
-                                            <a href=""><i class="mdi mdi-linkedin f-20"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-info position-absolute">
-                            <h6>Nick Obron <span class="f-14 text-muted fw-normal">/ Devloper</span></h6>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-box">
-                        <div class="row justify-content-end">
-                            <div class="col-lg-9 col-10">
-                                <div class="team-image text-end">
-                                    <img src="images/team/img2.png" alt="" class="img-fluid">
-                                </div>
-                                <div class="team-icon">
-                                    <div class="d-flex mt-2">
-                                        <div class="social-icon facebook mx-2">
-                                            <a href=""> <i class="mdi mdi-facebook f-20"></i></a>
-                                        </div>
-                                        <div class="social-icon instagram mx-2">
-                                            <a href=""><i class="mdi mdi-instagram f-20"></i></a>
-                                        </div>
-                                        <div class="social-icon twitter mx-2">
-                                            <a href=""><i class="mdi mdi-twitter f-20"></i></a>
-                                        </div>
-                                        <div class="social-icon linkedin mx-2">
-                                            <a href=""><i class="mdi mdi-linkedin f-20"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-info position-absolute">
-                            <h6>Simmy roy <span class="f-14 text-muted fw-normal">/ Manager</span></h6>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <!-- end container -->
-    </section>
-    <!-- end section -->
-
-
-
-    <!-- cta section -->
-    <section class="section cta" id="cta">
-        <div class="bg-overlay-gradiant"></div>
-        <!-- start container -->
-        <div class="container position-relative">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="py-5">
-                        <h1 class="display-4 text-white">Build Your ideal workspace today.</h1>
-                        <p class="text-white-50 mt-3 f-18">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Iure distinctio vero facilis numquam sapiente! Eaque inventore eveniet repellendus quod
-                            maiores nulla.</p>
-                        <div class="d-flex mt-4 ">
-                            <div class="app-store">
-                                <a href=""><img src="images/img-appstore.png" alt="" class="img-fluid"></a>
-                            </div>
-                            <div class="googleplay">
-                                <a href=""><img src="images/img-googleplay.png " alt="" class="img-fluid ms-3"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="cta-phone-image">
-                        <img src="images/cta-bg.png" alt="" class=" img-fluid">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- end container -->
-    </section>
-    <!-- end section -->
-
-
-    <!-- contact section -->
-    <section class="section contact overflow-hidden" id="contact">
-        <!-- start container -->
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="title text-center mb-5">
-                        <h6 class="mb-0 fw-bold text-primary">Contact Us</h6>
-                        <h2 class="f-40">Get In Touch!</h2>
-                        <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eos
-                            <br>
-                            inventore omnis aliquid rerum alias molestias.
-                        </p>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="row align-items-center">
-                <div class="col-lg-5">
-                    <div class="contact-box">
-                        <div class="mb-4">
-                            <h4 class=" fw-semibold mb-1">Need Support !</h4>
-                            <p class="text-muted">Contact us for a quote , help to join the them.</p>
-                        </div>
-
-                        <div class="custom-form mt-4 ">
-                            <form method="post" name="myForm" onsubmit="return validateForm()">
-                                <p id="error-msg" style="opacity: 1;">
-                                    <!-- <div class="alert alert-warning">*Please enter a Name*</div> -->
-                                </p>
-
-                                <div id="simple-msg"></div>
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <input name="name" id="name" type="text" class="form-control contact-form"
-                                                placeholder="Your name">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <input name="email" id="email" type="email"
-                                                class="form-control contact-form" placeholder="Your email">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="form-group mt-2">
-                                            <input type="text" class="form-control contact-form" id="subject"
-                                                placeholder="Your Subject..">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="form-group mt-2">
-                                            <textarea name="comments" id="comments" rows="4" class="form-control contact-form h-auto"
-                                                placeholder="Your message..."></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row my-2">
-                                    <div class="col-lg-12 d-grid">
-                                        <input type="submit" id="submit" name="send"
-                                            class="submitBnt btn btn-rounded btn-primary" value="Send Message">
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="col-lg-7">
-                    <div class="m-5">
-                        <div class="position-relative">
-                            <div class="contact-map">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29754.94142818836!2d72.88699279999999!3d21.217263799999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1641286801478!5m2!1sen!2sin"
-                                    width="550" height="450" style="border:0;" allowfullscreen=""
-                                    loading="lazy"></iframe>
-                            </div>
-                            <div class="map-shape"></div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="row mt-4">
-                <div class="col-md-4">
-                    <div class="d-flex align-items-center">
-                        <div class="flex-shrink-0">
-                            <i class="mdi mdi-google-maps f-50 text-primary"></i>
-                        </div>
-                        <div class="flex-grow-1 ms-3">
-                            <h5 class="mb-1">Location</h5>
-                            <p class="f-14 mb-0 text-muted">2276 Lynn Ogden Lane Beaumont</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="d-flex align-items-center mt-4 mt-lg-0">
-                        <div class="flex-shrink-0">
-                            <i class="mdi mdi-email f-50 text-primary"></i>
-                        </div>
-                        <div class="flex-grow-1 ms-3">
-                            <h5 class="mb-1">Email</h5>
-                            <p class="f-14 mb-0 text-muted">Email: FredVWeaver@rhyta.com</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="d-flex align-items-center mt-4 mt-lg-0">
-                        <div class="flex-shrink-0">
-                            <i class="mdi mdi-phone f-50 text-primary"></i>
-                        </div>
-                        <div class="flex-grow-1 ms-3">
-                            <h5 class="mb-1">Phone</h5>
-                            <p class="f-14 mb-0 text-muted">2276 Lynn Ogden Lane Beaumont</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- end container -->
-    </section>
-    <!-- end section -->
-
-
-
     <!-- footer section -->
-    <section class=" section footer bg-dark overflow-hidden">
+    <section class=" section footer bg-dark overflow-hidden" id="contact">
         <div class="bg-arrow">
 
         </div>
@@ -1733,59 +1281,64 @@
         <div class="container">
             <div class="row ">
                 <div class="col-lg-6">
-                    <a class="navbar-brand logo text-uppercase" href="index-1.html">
+                    <a class="navbar-brand-footer logo text-uppercase" href="index-1.html">
                         <img src="logo.png" class="logo-light" alt="" height="30">
                         <!-- <img src="images/logo-dark.png" class="logo-dark" alt="" height="28"> -->
                     </a>
                     <p class="text-white-50 mt-2 mb-0">
-                        <b>PANGKALPINANG</b><br>
-                        0813 9549 3158 | 0852 0890 2234<br>Jalan Selangat Komplek Guru No. 2
-                        Selindung Baru
+                        <b class="text-white">PANGKALPINANG (Alamat Kantor dan Catering)</b><br>
+                        0813 9549 3158 | 0852 0890 2234<br>Jalan Selangat Komplek Guru No. 1
+                        Selindung Baru <br>
+
+                        <b class="text-white">Alamat Kandang</b><br>
+                        Parit lalang, Pangkalpinang
                     </p>
                     <p class="text-white-50 mt-2 mb-0">
-                        <b>SUNGAILIAT</b>
+                        <b class="text-white">SUNGAILIAT</b>
                         <br>
                         0812 71 777 43<br>
                         Jalan Batin Tikal No. 59/127
                         Senang Hati
                     </p>
                     <p class="text-white-50 mt-2 mb-0">
-                        <b>TOBOALI</b><br>
+                        <b class="text-white">TOBOALI</b><br>
                         0853 8367 4812<br>
                         Gang Mawar
                         Kelurahan Gadung
                     </p>
                     <p class="text-white-50 mt-2 mb-0">
-                        <b>KOBA</b><br>
+                        <b class="text-white">KOBA</b><br>
                         0852 7392 9997<br>
                         Jl. Balai Desa Nibung RT.06
                         Kelurahan Gadung
                     </p>
                     <div class="footer-icon mt-4">
                         <div class=" d-flex align-items-center">
-                            <a href="" class="me-2 avatar-sm text-center" data-bs-toggle="tooltip"
-                                data-bs-placement="top" title="Facebook">
+                            <a href="https://web.facebook.com/people/Alif-Aqiqah-Catering-Pangkalpinang/100069678948378/" class="me-2 avatar-sm text-center" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook">
                                 <i class="mdi mdi-facebook f-24 align-middle text-light"></i>
                             </a>
-                            <a href="" class="mx-2 avatar-sm text-center" data-bs-toggle="tooltip"
-                                data-bs-placement="top" title="twitter">
+                            <a href="https://www.instagram.com/alifaqiqahcatering/?hl=en" class="mx-2 avatar-sm text-center" data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram">
+                                <i class="mdi mdi-instagram f-24 align-middle text-light"></i>
+                            </a>
+                            <a href="https://wa.me/+6281395493158" class="mx-2 avatar-sm text-center" data-bs-toggle="tooltip" data-bs-placement="top" title="WhatsApp">
+                                <i class="mdi mdi-whatsapp f-24 align-middle text-light"></i>
+                            </a>
+                            <!-- <a href="" class="mx-2 avatar-sm text-center" data-bs-toggle="tooltip" data-bs-placement="top" title="twitter">
                                 <i class="mdi mdi-twitter f-24 align-middle text-light"></i>
                             </a>
-                            <a href="" class="mx-2 avatar-sm text-center" data-bs-toggle="tooltip"
-                                data-bs-placement="top" title="googleplay">
+                            <a href="" class="mx-2 avatar-sm text-center" data-bs-toggle="tooltip" data-bs-placement="top" title="googleplay">
                                 <i class="mdi mdi-google-play f-24 align-middle text-light"></i>
                             </a>
                             <a href="" class="mx-2 avatar-sm text-center">
-                                <i class="mdi mdi-linkedin f-24 align-middle text-light" data-bs-toggle="tooltip"
-                                    data-bs-placement="top" title="linkedin"></i>
-                            </a>
+                                <i class="mdi mdi-linkedin f-24 align-middle text-light" data-bs-toggle="tooltip" data-bs-placement="top" title="linkedin"></i>
+                            </a> -->
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-6">
                     <h5 class="text-white">Contact Us</h5>
-                    <form>
+                    <form class="contactForm" action="sendemail.php" method="get">
                         <div class="row">
                             <div class="col-12">
                                 <div class="mb-3">
@@ -1812,11 +1365,14 @@
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button type="submit" class="btn btn-muted float-end">Submit</button>
+                                <a href="mailto:gilangaryadimahardika@gmail.com">
+                                    <button type="submit" class="btn btn-muted float-end" name="submit" value="submit">Submit</button>
+                                </a>
                             </div>
                         </div>
                     </form>
                 </div>
+
             </div>
         </div>
         <!-- end container -->
@@ -1830,7 +1386,7 @@
                         <script>
                             document.write(new Date().getFullYear())
                         </script> alifaqiqahcatering. Made with <i class="mdi mdi-brain text-pink"></i>
-                        by <a href="#" target="_blank" class="text-muted">Creative Pro.</a>
+                        by <a href="https://humanoo.id/" target="_blank" class="text-muted">humanoo.id</a>
                     </p>
                 </div>
             </div>
@@ -1840,7 +1396,7 @@
 
 
     <!-- Style switcher -->
-    {{-- <div class="style-switcher" id="style-switcher" onclick="toggleSwitcher()" style="left: -189px;">
+    <div class="style-switcher" id="style-switcher" onclick="toggleSwitcher()" style="left: -189px;">
         <div>
             <h6>Select your color</h6>
             <ul class="pattern list-unstyled mb-0">
@@ -1855,11 +1411,11 @@
                 </li>
             </ul>
         </div>
-        <div class="bottom">
+        <!-- <div class="bottom">
             <a href="javascript: void(0);" class="settings rounded-end"><i class="uil uil-setting text-white"
                     style="display: inline; line-height: 46px;"></i></a>
-        </div>
-    </div> --}}
+        </div> -->
+    </div>
     <!-- end switcher-->
 
 

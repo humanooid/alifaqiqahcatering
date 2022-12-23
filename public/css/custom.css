@@ -1,0 +1,76 @@
+:root {
+    --primary-color: #00613A;
+    --secondary-color: #ffb60b;
+    --tertiary-color: #d6d6d6;
+    --white-color: #ffffff;
+}
+
+.btn {
+    text-decoration: none;
+}
+
+.home {
+    background-image: url(../images/slider.jpg);
+}
+
+.section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.btn:hover {
+    opacity: 80%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color) !important;
+}
+
+h1, .display-5 {
+    line-height: 1.5em;
+}
+
+hr {
+    border: 1px solid var(--white-color);
+}
+
+.navbar .navbar-nav .nav-link {
+    color: var(--white-color) !important;
+}
+
+.navbar-brand{
+    margin-left: 1rem;
+}
+
+.nav-sticky .nav-item .nav-link {
+    color: var(--tertiary-color) !important;
+}
+
+.hashtag-text { 
+    color: var(--white-color);
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    padding: 2px;
+}
+
+.badge {
+    border: #ffffff 2px solid;
+}
+
+.pricing .price-item .price-up-box.active {
+    background-color: var(--secondary-color) !important;
+}
+
+.pricing .price-item .price-up-box {
+    background-color: var(--primary-color) !important;
+}
+
+.footer .form-control {
+    height: 40px;
+}
+
+.navbar-brand-footer img{
+    width: 250px;
+    height: auto;
+    margin-bottom: 20px;
+}
