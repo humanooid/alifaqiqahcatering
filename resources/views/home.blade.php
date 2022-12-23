@@ -127,7 +127,7 @@
         <div class="container-fluid">
 
             <!-- LOGO -->
-            <a class="navbar-brand logo text-uppercase" href="index-1.html">
+            <a class="navbar-brand logo text-uppercase" href="/">
                 <img src="logo.png" class="logo-light" alt="" height="30">
                 <img src="alifaqiqah logo.png" class="logo-dark" alt="" height="30">
             </a>
