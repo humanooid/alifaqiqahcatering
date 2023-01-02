@@ -11,7 +11,7 @@
 
     <link rel="shortcut icon" href="../../favicon.png">
 
-    <!-- Bootstrap css -->
+    <!-- Bootstrap Css -->
     <link rel="stylesheet" href="../../css/bootstrap.min.css" type="text/css" id="bootstrap-style" />
 
     <!-- Material Icon Css -->
@@ -28,8 +28,13 @@
     <link rel="stylesheet" href="../../css/style.min.css" type="text/css" />
     <link rel="stylesheet" href="../../css/custom.css" type="text/css" />
 
-    <!-- colors -->
+    <!-- Colors -->
     <link href="../../css/colors/default.css" rel="stylesheet" type="text/css" id="color-opt" />
+
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link href="../../css/swiper-js.css" rel="stylesheet" type="text/css" />
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
@@ -566,7 +571,7 @@
 
 
 
-    <!-- start testimonial -->
+    <!-- testimonial section -->
     {{-- <section class="section bg-light testimonial" id="testimonial">
         <!-- start container -->
         <div class="container">
@@ -782,8 +787,6 @@
         <!-- end container -->
     </section> --}}
     <!-- end testimonial -->
-
-
 
     <!-- pricing section -->
     <section class="section pricing  bg-light" id="pricing">
@@ -1011,18 +1014,12 @@
 
                     <div class="price-down-box p-4">
                         <ul class="list-unstyled ">
-                            <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>500 Sate
-                                    Tusuk</b></li>
-                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>80
-                                    Porsi Gulai</b></li>
-                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis
-Gratis Antar Wil. Pangkalpinang dan Sekitarnya*</li>
-                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis
-                                Distribusi</li>
-                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>+
-                                Sertifikat Aqiqah</li>
-                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>+ Risalah
-                                Aqiqah</li>
+                            <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>500 Sate Tusuk</b></li>
+                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>80 Porsi Gulai</b></li>
+                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis Antar Wil. Pangkalpinang dan Sekitarnya*</li>
+                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis Distribusi</li>
+                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>+ Sertifikat Aqiqah</li>
+                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>+ Risalah Aqiqah</li>
                         </ul>
                         <center>
                             <a href="whatsapp://send?text=Assalamu'alaikum admin Alif Aqiqah, saya ingin pesan Aqiqah Paket H&phone=+6281395493158" class="btn btn-sm btn-primary mt-3">PESAN</a>
@@ -1061,7 +1058,11 @@ Gratis Antar Wil. Pangkalpinang dan Sekitarnya*</li>
 
         <br>
 
-        <!-- Paket Nasi Kotak -->
+    </section>
+    <!-- end pricing -->
+
+    <!-- box package section -->
+    <section class="section box-package" id="box-package">
         <div class="col-lg-12 mt-5">
             <div class="row align-items-center justify-content-center">
 
@@ -1206,13 +1207,11 @@ Gratis Antar Wil. Pangkalpinang dan Sekitarnya*</li>
 
             </div>
         </div>
-        <!-- end-section -->
-
     </section>
-    <!-- end pricing -->
+    <!-- end box package -->
 
     <!-- slider section -->
-    <section class="section app-slider" id="app">
+    <section class="section app-slider bg-light" id="app">
         <!-- start container -->
         <div class="container">
             <div class="row justify-content-center">
@@ -1271,6 +1270,33 @@ Gratis Antar Wil. Pangkalpinang dan Sekitarnya*</li>
         </div>
     </section>
     <!-- end section -->
+
+    <!-- gallery section -->
+    <!-- Swiper -->
+    <section class="section pricing" id="gallery">
+        <div class="title text-center mb-5">
+            <h6 class="mb-0 fw-bold text-primary">Sate, Gule, Nasi Kebuli</h6>
+            <h2 class="f-40">Galeri Kami</h2>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="../images/galeri-1.jpg" alt="Slide 1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/galeri-2.jpg" alt="Slide 2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/galeri-3.jpg" alt="Slide 3">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/galeri-4.jpg" alt="Slide 4">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- end-section -->
 
     <!-- footer section -->
     <section class=" section footer bg-dark overflow-hidden" id="contact">
@@ -1464,6 +1490,22 @@ Gratis Antar Wil. Pangkalpinang dan Sekitarnya*</li>
                 el.text("Sembunyikan");
             }
         }
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3.5,
+            spaceBetween: 5,
+            freeMode: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
     </script>
 
 </body>
