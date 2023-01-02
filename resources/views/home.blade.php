@@ -1063,8 +1063,13 @@
 
     <!-- box package section -->
     <section class="section box-package" id="box-package">
-        <div class="col-lg-12 mt-5">
+        <div class="col-lg-12 mt-5 mx-4">
             <div class="row align-items-center justify-content-center">
+
+            <div class="title text-center mb-5">
+                        <h6 class="mb-0 fw-bold text-primary">Paketnya Apa Saja?</h6>
+                        <h2 class="f-40">Pilihan Paket Nasi Kotak <br> dan Kambing Guling</h2>
+            </div>
 
                 <div class="col-lg-4">
                     <div class="accordion shadow" id="accordionExample">
