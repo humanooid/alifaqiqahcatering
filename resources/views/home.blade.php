@@ -1501,6 +1501,20 @@
             slidesPerView: 3.5,
             spaceBetween: 5,
             freeMode: true,
+            breakpoints: {
+                320: {
+                slidesPerView: 1.3,
+                spaceBetween: 10,},  
+                480: {
+                slidesPerView: 1.3,
+                spaceBetween: 10,},
+                640: {
+                slidesPerView: 1.8,
+                spaceBetween: 50, },
+                1280: {
+                slidesPerView: 3.5,
+                spaceBetween: 50, },
+            },
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
