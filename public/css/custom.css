@@ -53,6 +53,31 @@ hr {
     padding: 2px;
 }
 
+.accordion-item:first-of-type {
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+}
+
+.accordion-item:last-of-type {
+    border-bottom-left-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem;
+}
+
+.accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: calc(.75rem - 1px);
+    border-top-right-radius: calc(.75rem - 1px)
+}
+
+.accordion-item:last-of-type .accordion-button {
+    border-bottom-left-radius: calc(.75rem - 1px);
+    border-bottom-right-radius: calc(.75rem - 1px)
+}
+
+.rounded-top {
+    border-top-left-radius: .75rem!important;
+    border-top-right-radius: .75rem!important;
+}
+
 .badge {
     border: #ffffff 2px solid;
 }

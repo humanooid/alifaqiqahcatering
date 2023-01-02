@@ -44,3 +44,8 @@
 #gallery .swiper-pagination .swiper-pagination-bullet-active {
     background: var(--primary-color);
 }
+
+#app img{
+  width: 250px;
+  height: auto;
+}

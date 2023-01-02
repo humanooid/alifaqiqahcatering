@@ -102,7 +102,7 @@ new Swiper(".swiper-container", {
             spaceBetween: 30,
         },
         768: {
-            slidesPerView: 1,
+            slidesPerView: 2,
             spaceBetween: 30,
         },
     },

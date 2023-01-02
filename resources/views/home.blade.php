@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Catering dan Aqiqah anak Pangkalpinang, Sungailiat dan Toboali</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <meta name="description" content=" " />
     <meta name="keywords" content="" />
     <meta content="Pichforest" name="author" />
@@ -1063,8 +1063,13 @@
 
     <!-- box package section -->
     <section class="section box-package" id="box-package">
-        <div class="col-lg-12 mt-5">
+        <div class="col-lg-12 mt-5 mx-4">
             <div class="row align-items-center justify-content-center">
+
+            <div class="title text-center mb-5">
+                        <h6 class="mb-0 fw-bold text-primary">Paketnya Apa Saja?</h6>
+                        <h2 class="f-40">Pilihan Paket Nasi Kotak <br> dan Kambing Guling</h2>
+            </div>
 
                 <div class="col-lg-4">
                     <div class="accordion shadow" id="accordionExample">
