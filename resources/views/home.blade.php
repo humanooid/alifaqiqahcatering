@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Catering dan Aqiqah anak Pangkalpinang, Sungailiat dan Toboali</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <meta name="description" content=" " />
     <meta name="keywords" content="" />
     <meta content="Pichforest" name="author" />
