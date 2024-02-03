@@ -37,86 +37,6 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-    <style>
-        body[data-layout-mode=dark] .accordion .accordion-body {
-            background-color: #343f4b !important;
-        }
-
-        body[data-layout-mode=dark] .accordion .accordion-body p {
-            color: #ffffff !important;
-        }
-
-        .text-gradiant {
-            background: -webkit-linear-gradient(#00613A, #005734);
-            -webkit-background-clip: text;
-        }
-
-        .bg-gradiant {
-            background: linear-gradient(80deg, #00613A 0%, #005734 100%);
-            border: none !important;
-            color: #fff !important;
-        }
-
-        .mode-btn {
-            background-color: #343a40;
-            border: 1px solid #343a40;
-        }
-
-        .navbar .navbar-nav .nav-link:hover,
-        .navbar .navbar-nav .nav-link:active,
-        .navbar .navbar-nav .nav-link.active {
-            color: #00613A !important;
-        }
-
-        .btn {
-            border-color: #00613A;
-        }
-
-        .btn-link {
-            color: #00613A;
-        }
-
-        .btn-link:hover {
-            color: #005734;
-        }
-
-        .service .service-box a:hover {
-            color: #00613A;
-        }
-
-        .service .service-box:hover a {
-            color: #00613A;
-        }
-
-
-        .app-slider .swiper-container .swiper-pagination-bullet-active {
-            background: #00613A;
-        }
-
-        .section.footer.bg-dark.overflow-hidden .bg-arrow {
-            background: #00613A;
-            background-repeat: no-repeat;
-        }
-
-        .accordion-button::after {
-            flex-shrink: 0;
-            width: 1.25rem;
-            height: 1.25rem;
-            margin-left: auto;
-            content: "";
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-            background-repeat: no-repeat;
-            background-size: 1.25rem;
-            transition: transform .2s ease-in-out
-        }
-
-        .accordion-button:not(.collapsed)::after {
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-            transform: rotate(-180deg)
-        }
-    </style>
-
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="71">
@@ -127,11 +47,10 @@
         <i class="uil uil-moon bx-spin mode-light"></i> -->
     </a>
 
-    <!-- START  NAVBAR -->
+    <!-- navbar -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-light" id="navbar">
         <div class="container-fluid">
 
-            <!-- LOGO -->
             <a class="navbar-brand logo text-uppercase" href="/">
                 <img src="logo.png" class="logo-light" alt="" height="30">
                 <img src="alifaqiqah logo.png" class="logo-dark" alt="" height="30">
@@ -149,9 +68,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#service">Layanan</a>
                     </li>
-                    {{-- <li class="nav-item">
-                        <a class="nav-link" href="#features">Features</a>
-                    </li> --}}
                     <li class="nav-item">
                         <a class="nav-link" href="#pricing">Paket</a>
                     </li>
@@ -162,15 +78,13 @@
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
-                {{-- <div class="ms-auto">
-                    <a href="" class="btn bg-gradiant">Login</a>
-                </div> --}}
+                <!-- <div class="ms-auto">
+                    <a href="" class="btn btn-sm btn-primary">Login</a>
+                </div> -->
             </div>
         </div>
     </nav>
     <!-- END NAVBAR -->
-
-
 
     <!-- home section -->
     <section class="home bg-light" id="home">
@@ -237,8 +151,7 @@
                                 kepada anda telah terdaftar sebagai Tempat Pemotongan Hewan yang sehat dengan
                                 dikeluarkannya Surat Keterangan Tempat
                                 <span id="service1">
-                                    Pemotongan Hewan dari Dinas Pertanian terkait
-                                    bernomor :
+                                    Pemotongan Hewan dari Dinas Pertanian terkait bernomor :
                                     524.7/0625/TPH-MDBRT/DINPERTAN/2018.
                                     <br><br>
                                     Penataan Bangunan dengan kelengkapan Kandang sendiri dengan ketersediaan Kambing
@@ -249,10 +162,9 @@
                                     & Catering terus berbenah mencapai peringkat standarisasi terbaik.
                                 </span>
                                 <br>
-                                <center>
-                                    <button class="btn btn-sm btn-link" onclick="expandService($(this), 1)">Lihat
-                                        Selengkapnya</button>
-                                </center>
+                                <button class="btn btn-sm btn-link" onclick="expandService($(this), 1)">Lihat
+                                    Selengkapnya
+                                </button>
                             </p>
                         </div>
                     </div>
@@ -371,31 +283,6 @@
     <!-- <div class="section features" id="features">    -->
     <!-- start container -->
     <div class="container">
-        <!-- <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="title text-center mb-5">
-                        <h6 class="mb-0 fw-bold text-primary">Kenapa Perlu Aqiqah?</h6>
-                        <h2 class="f-40">Dalil Aqiqah</h2>
-                        <p class="text-muted">
-                        <h4>
-                            كُلُّ غُلاَمٍ رَهِينَةٌ بِعَقِيقَتِهِ تُذْبَحُ عَنْهُ يَوْمَ سَابِعِهِ
-                            وَيُحْلَقُ وَيُسَمَّيكُلُّ غُلاَمٍ رَهِينَةٌ بِعَقِيقَتِهِ تَذْ بَحُ عَنْهُ يَوْمَ سَابِعِهِ
-                            وَيُحْلَقُ وَيُسَمَّى“
-                        </h4>
-                        <h6>
-                            Setiap bayi tergadai dengan aqiqahnya, disembelihkan (kambing)
-                            untuknya pada hari ke tujuh, dicukur dan diberi nama”
-                        </h6>
-                        <em>
-                            [HR Abu awud, no. 2838, at-Tirmidzi no. 1522,
-                            Ibnu Majah no. 3165 dll dari sahabat Samurah bin Jundub Radhiyallahu anhu.
-                            Hadits ini dishahihkan oleh al-Hakim dan disetujui oleh adz-Dzahabi, Syaikh al-Albani
-                            dan Syaikh Abu Ishaq al-Huwaini dalam kitab al-Insyirah Fi Adabin Nikah hlm. 97]
-                        </em>
-                        </p>
-                    </div>
-                </div>
-            </div> -->
 
         {{-- <div class="row justify-content-center">
 
@@ -568,8 +455,6 @@
     <!-- end container -->
     </div>
     <!-- end features -->
-
-
 
     <!-- testimonial section -->
     {{-- <section class="section bg-light testimonial" id="testimonial">
@@ -1001,221 +886,143 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-lg-2">
-                <div class="price-item shadow overflow-hidden mt-4 mt-lg-0">
-                    <div class="price-up-box p-4">
-                        <div class="badge bg-primary fw-normal f-14">Paket H</div>
-                        <div class="price-tag mt-2">
-                            <h2 class="text-white mb-0 f-40"><sup class="f-22 fw-normal">IDR</sup>3,000</h2>
-                        </div>
-                        <p class="text-white-50 mb-0">Kambing Jantan</p>
-                    </div>
-                    <div class="border border-3"></div>
-
-                    <div class="price-down-box p-4">
-                        <ul class="list-unstyled ">
-                            <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>500 Sate Tusuk</b></li>
-                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>80 Porsi Gulai</b></li>
-                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis Antar Wil. Pangkalpinang dan Sekitarnya*</li>
-                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Gratis Distribusi</li>
-                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>+ Sertifikat Aqiqah</li>
-                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>+ Risalah Aqiqah</li>
-                        </ul>
-                        <center>
-                            <a href="whatsapp://send?text=Assalamu'alaikum admin Alif Aqiqah, saya ingin pesan Aqiqah Paket H&phone=+6281395493158" class="btn btn-sm btn-primary mt-3">PESAN</a>
-                        </center>
-                    </div>
-                </div>
-            </div> -->
             </div>
 
         </div>
 
         <br>
-
-        <!-- <div class="container-fluid mt-5 mb-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-6 bg-muted pt-3" style="height: 110px">
-                    <div class="title">
-                        <h4 class="text-white">Paket Aqiqah Kambing Jantan Paket Masak</h4>
-                    </div>
-                    <center>
-                        <img src="../../Jual-Kambing-domba-Alif-Aqiqah-Catering-Pangkalpinang.png"
-                            alt="Jual-Kambing-domba-Alif-Aqiqah-Catering-Pangkalpinang" width="100px"
-                            class="img-fluid mt-2">
-                    </center>
-                </div>
-                <div class="col-lg-4 bg-dark pt-3" style="height: 110px">
-                    <div class="title">
-                        <h4 class="text-white">Catering | Nasi Kotak | Prasmanan</h4>
-                    </div>
-                    <img src="../../Nasi-Kotak-Alif-Aqiqah-Catering-Pangkalpinang.png"
-                        alt="Nasi-Kotak-Alif-Aqiqah-Catering-Pangkalpinang" width="70px" class="img-fluid">
-                    <button class="btn btn-sm btn-orange float-end mb-3">Pesan</button>
-                </div>
-            </div>
-        </div> -->
 
         <br>
 
     </section>
     <!-- end pricing -->
 
+    <!-- kambing guling section -->
+    <div class="website-view">
+        <img src="../images/foto.jpeg" alt="" style="height: 300px; width:100%; background-color: blue; object-fit: cover;">
+    </div>
+    <!-- end section -->
+
+    <!-- mobile-view -->
+    <div class="mobile-view">
+        <img src="../images/foto-mobile.jpeg" alt="" style="height: 300px; width:100%; background-color: blue; object-fit: cover;">
+    </div>
+    <!-- end-section -->
+
     <!-- box package section -->
-    <section class="section box-package" id="box-package">
-        <div class="col-lg-12 mt-5 mx-4">
-            <div class="row align-items-center justify-content-center">
-
-            <div class="title text-center mb-5">
+    <section class="section box-package bg-light" id="box-package">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="title text-center mb-5">
                         <h6 class="mb-0 fw-bold text-primary">Paketnya Apa Saja?</h6>
-                        <h2 class="f-40">Pilihan Paket Nasi Kotak <br> dan Kambing Guling</h2>
+                        <h2 class="f-40">Pilihan Paket</h2>
+                        {{-- <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eos
+                            inventore omnis aliquid rerum alias molestias.</p> --}}
+
+                    </div>
+                </div>
             </div>
 
-                <div class="col-lg-4">
-                    <div class="accordion shadow" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button bg-warning text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Paket Nasi Kotak Menu A
-                                    <span class="badge bg-warning text-dark mx-2">Rp. 13.000,-</span>
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <center>
-                                        <ul class="list-unstyled ">
-                                            <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Nasi Putih</li>
-                                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Sayur</li>
-                                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Acar</li>
-                                        </ul>
-                                    </center>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button bg-warning text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                                    Paket Nasi Kotak Menu B
-                                    <span class="badge bg-warning text-dark mx-2">Rp. 14.500,-</span>
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <center>
-                                        <ul class="list-unstyled ">
-                                            <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Nasi Putih</li>
-                                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Sayur/Acar</li>
-                                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Buah</b></li>
-                                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Kerupuk</b></li>
-                                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Sambel</b></li>
-                                        </ul>
-                                    </center>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button bg-warning text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                                    Paket Nasi Kotak Menu C
-                                    <span class="badge bg-warning text-dark mx-2">Rp. 17.500,-</span>
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <center>
-                                        <ul class="list-unstyled ">
-                                            <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Nasi Putih</li>
-                                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Sayur/Acar</li>
-                                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Buah</li>
-                                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Kerupuk</li>
-                                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Sambel + Telur</b></li>
-                                        </ul>
-                                    </center>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingFour">
-                                <button class="accordion-button bg-warning text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                                    Paket Nasi Kotak Menu D
-                                    <span class="badge bg-warning text-dark mx-2">Rp. 20.000,-</span>
-                                </button>
-                            </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <center>
-                                        <ul class="list-unstyled ">
-                                            <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Nasi Putih</li>
-                                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Sayur/Acar</li>
-                                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Buah</li>
-                                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Kerupuk</li>
-                                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Sambel Telur dan Goreng Ati</b></li>
-                                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Air Mineral</b></li>
-                                        </ul>
-                                    </center>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingFive">
-                                <button class="accordion-button bg-warning text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-                                    Paket Nasi Kotak Menu E
-                                    <span class="badge bg-warning text-dark mx-2">Rp. 25.000,-</span>
-                                </button>
-                            </h2>
-                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <center>
-                                        <ul class="list-unstyled ">
-                                            <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Nasi Putih</li>
-                                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Sayur/Acar</li>
-                                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Buah</li>
-                                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Kerupuk</li>
-                                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Sambel Telur/Goreng Ati</li>
-                                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>Air Mineral</li>
-                                            <li class="mt-2"><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Masakan Ayam (*Isi di Form) </b></li>
-                                        </ul>
-                                    </center>
-                                </div>
+            <div class="row align-items-center justify-content-center mb-4">
+                <div class="col-lg-4 mb-3">
+                    <div class="card">
+                        <img src="../images/menu_a.jpg" style="border-radius: 17px 17px 0px 0px;">
+                        <div class="card-body">
+                            <div class="card-title">Paket Nasi Kotak Menu A</div>
+                            <div class="card-text">
+                                <ul class="list-unstyled ">
+                                    <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Nasi Putih, Sayur, Acar</b></li><br>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 m-3">
-                    <div class="accordion shadow" id="accordionExample">
-                        <div class="accordion-item">
-                            <div class="row">
-                                <div class="bg-warning p-4 rounded-top shadow">
-                                    <div class="title float-start">
-                                        <h4 class="text-white">PAKET LIVEGRILL & LIVESTOCK</h4>
-                                        <hr class="mb-2">
-                                        <p class="text-white">Kambing Guling, Bakar Lezat Plus Layanan Masak, Kambing
-                                            Hidup yang sehat dan bobot berkualitas</p>
-                                    </div>
-
-                                    <a href="whatsapp://send?text=Assalamu'alaikum admin Alif Aqiqah, saya ingin pesan Aqiqah PAKET LIVEGRILL & LIVESTOCK&phone=+6281395493158">
-                                        <button class="btn btn-muted float-end">PESAN
-                                        </button>
-                                    </a>
-                                    <h3><span class="badge bg-light text-danger position-absolute px-5" style="bottom: -20px; left: 10px; z-index: 99;">Mulai dari IDR 2,200</span></h3>
-                                </div>
-                                <div class="col-12 p-0 shadow">
-                                    <div id="foto">
-                                        <img class="img-fluid rounded-bottom" src="../../images/foto.jpg" style="width: 100%">
-                                    </div>
-                                </div>
+                <div class="col-lg-4 mb-3">
+                    <div class="card">
+                        <img src="../images/menu_b.jpg" style="border-radius: 17px 17px 0px 0px;">
+                        <div class="card-body">
+                            <div class="card-title">Paket Nasi Kotak Menu B</div>
+                            <div class="card-text">
+                                <ul class="list-unstyled ">
+                                    <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Nasi Putih, Sayur/Acar, Buah, Kerupuk, Sambel</b></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <div class="col-lg-4 mb-3">
+                    <div class="card">
+                        <img src="../images/menu_c.jpg" style="border-radius: 17px 17px 0px 0px;">
+                        <div class="card-body">
+                            <div class="card-title">Paket Nasi Kotak Menu C</div>
+                            <div class="card-text">
+                                <ul class="list-unstyled ">
+                                    <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Nasi Putih, Sayur/Acar, Buah, Kerupuk, Sambel + Telur</b></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-4 mb-3">
+                    <div class="card">
+                        <img src="../images/menu_d.jpg" style="border-radius: 17px 17px 0px 0px;">
+                        <div class="card-body">
+                            <div class="card-title">Paket Nasi Kotak Menu D</div>
+                            <div class="card-text">
+                                <ul class="list-unstyled ">
+                                    <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Nasi Putih, Sayur/Acar, Buah, Kerupuk, Sambel Telur dan Goreng Ati, Air Mineral</b></li><br>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-3">
+                    <div class="card">
+                        <img src="../images/menu_e.jpg" style="border-radius: 17px 17px 0px 0px;">
+                        <div class="card-body">
+                            <div class="card-title">Paket Nasi Kotak Menu E</div>
+                            <div class="card-text">
+                                <ul class="list-unstyled ">
+                                    <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Nasi Putih, Sayur/Acar, Buah, Kerupuk, Sambel Telur dan Goreng Ati, Air Mineral, Masakan Ayam</b></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
         </div>
     </section>
     <!-- end box package -->
 
-    <!-- slider section -->
+    <!-- brochure package -->
+    <section class="section brochure" id="brochure">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-4 mb-3">
+                    <div class="square"><img src="../images/bento.jpg" alt="" style="width: 100%; height: 450px; background-color: blue;" class="rounded-3"></div>
+                </div>
+                <div class="col-lg-4 mb-3">
+                    <div class="square"><img src="../images/box.jpg" alt="" style="width: 100%; height: 450px; background-color: blue;" class="rounded-3"></div>
+                </div>
+                <div class="col-lg-4 mb-3">
+                    <div class="square"><img src="../images/kebuli.jpg" alt="" style="width: 100%; height: 450px; background-color: blue;" class="rounded-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end brochure package -->
+
+    <!-- testimonial section -->
     <section class="section app-slider bg-light" id="app">
         <!-- start container -->
         <div class="container">
@@ -1234,6 +1041,7 @@
 
             <div class="row">
                 <div class="col-lg-12">
+
                     <div class="swiper-container">
                         {{-- <div class="fream-phone ">
                             <img src="images/testi/phone-fream.png" alt="" class="img-fluid">
@@ -1286,16 +1094,16 @@
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="../images/galeri-1.jpg" alt="Slide 1">
+                    <img src="../images/galeri-1.jpg" alt="Slide 1" class="rounded-3">
                 </div>
                 <div class="swiper-slide">
-                    <img src="../images/galeri-2.jpg" alt="Slide 2">
+                    <img src="../images/galeri-2.jpg" alt="Slide 2" class="rounded-3">
                 </div>
                 <div class="swiper-slide">
-                    <img src="../images/galeri-3.jpg" alt="Slide 3">
+                    <img src="../images/galeri-3.jpg" alt="Slide 3" class="rounded-3">
                 </div>
                 <div class="swiper-slide">
-                    <img src="../images/galeri-4.jpg" alt="Slide 4">
+                    <img src="../images/galeri-4.jpg" alt="Slide 4" class="rounded-3">
                 </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -1303,8 +1111,162 @@
     </section>
     <!-- end-section -->
 
+    <!-- slider section -->
+    <section class="section app-slider bg-light" id="app">
+        <!-- start container -->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="title text-center mb-5">
+                        <h6 class="mb-0 fw-bold text-primary">Pertanyaan seputar Alif Aqiqah</h6>
+                        <h2 class="f-40">Frequently Ask Question</h2>
+                        {{-- <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eos
+                            <br>
+                            inventore omnis aliquid rerum alias molestias.
+                        </p> --}}
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Q : #1 Apakah masakannya terjamin kebersihan dan higienitasnya mulai dari pengolahan sampai pengepakan?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body text-muted">
+                                    A : In syaa Allah semua proses dalam dapur kita telah melalui prosedur halal BPOM MUI dan higienitas dinas kesehatan.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Q : #2 Apakah hewan aqiqahnya sesuai syariat?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body text-muted">
+                                    A: In syaa Allah hewan aqiqah yang kita sediakan sesuai syarat, untuk domba minimal berumur 6 bulan dan jenis kambing minimal berumur 1 tahun </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Q : #3 Apakah masakannya enak dan tidak bau prengus?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body text-muted">
+                                    A : Alhamdulillah seringkali tanpa kita meminta testimoni, pelanggan sering memberikan respon positif terhadap masakan kita, karena didukung oleh chef profesional dan berpengalaman, serta penggunaan bumbu fresh dan berkualitas </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Q : #4 Apakah pemotongannya sesuai sunnah?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                <div class="accordion-body text-muted">
+                                    A : In syaa Allah petugas sembelih halal kita sudah bersertifikat
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end container -->
+        </div>
+    </section>
+    <!-- end section -->
+
+    <!-- test food request -->
+    <section class="section test-food">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="title text-center mb-5">
+                        <h6 class="mb-0 fw-bold text-primary">Formulir Test Food Request</h6>
+                        <h2 class="f-40">Test Food</h2>
+                        {{-- <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eos
+                            <br>
+                            inventore omnis aliquid rerum alias molestias.
+                        </p> --}}
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <form>
+                    <div class="row mb-3">
+                        <div class="form-group col-md-8">
+                            <label for="name">Nama Pemesan</label>
+                            <input type="text" class="form-control" id="name" placeholder="cth : Fulan bin Fulan">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="cth : fulan@gamil.com">
+                            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                        </div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="handphone">Nomer Handphone</label>
+                        <input type="number" class="form-control" id="handphone" placeholder="cth : 0896 7891 0111">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="socialMedia">Social Media (Instagram)</label>
+                        <input type="text" class="form-control" id="socialMedia" placeholder="cth : @fulan">
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="branch">Pilih Cabang</label>
+                        <select class="form-control" id="branch">
+                            <option>Pangkalpinang</option>
+                            <option>Sungailiat</option>
+                            <option>Toboali</option>
+                            <option>Koba</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+    <!-- end section  -->
+
+    <!-- <div class="row justify-content-center">
+        <div class="col-lg-6">
+            <div class="title text-center mb-5">
+                <h6 class="mb-0 fw-bold text-primary">Kenapa Perlu Aqiqah?</h6>
+                <h2 class="f-40">Dalil Aqiqah</h2>
+                <p class="text-muted">
+                <h4>
+                    كُلُّ غُلاَمٍ رَهِينَةٌ بِعَقِيقَتِهِ تُذْبَحُ عَنْهُ يَوْمَ سَابِعِهِ
+                    وَيُحْلَقُ وَيُسَمَّيكُلُّ غُلاَمٍ رَهِينَةٌ بِعَقِيقَتِهِ تَذْ بَحُ عَنْهُ يَوْمَ سَابِعِهِ
+                    وَيُحْلَقُ وَيُسَمَّى“
+                </h4>
+                <h6>
+                    Setiap bayi tergadai dengan aqiqahnya, disembelihkan (kambing)
+                    untuknya pada hari ke tujuh, dicukur dan diberi nama”
+                </h6>
+                <em>
+                    [HR Abu awud, no. 2838, at-Tirmidzi no. 1522,
+                    Ibnu Majah no. 3165 dll dari sahabat Samurah bin Jundub Radhiyallahu anhu.
+                    Hadits ini dishahihkan oleh al-Hakim dan disetujui oleh adz-Dzahabi, Syaikh al-Albani
+                    dan Syaikh Abu Ishaq al-Huwaini dalam kitab al-Insyirah Fi Adabin Nikah hlm. 97]
+                </em>
+                </p>
+            </div>
+        </div>
+    </div> -->
+
     <!-- footer section -->
-    <section class=" section footer bg-dark overflow-hidden" id="contact">
+    <section class="section footer bg-dark overflow-hidden" id="contact">
         <div class="bg-arrow">
 
         </div>
@@ -1354,15 +1316,6 @@
                             <a href="https://wa.me/+6281395493158" class="mx-2 avatar-sm text-center" data-bs-toggle="tooltip" data-bs-placement="top" title="WhatsApp">
                                 <i class="mdi mdi-whatsapp f-24 align-middle text-light"></i>
                             </a>
-                            <!-- <a href="" class="mx-2 avatar-sm text-center" data-bs-toggle="tooltip" data-bs-placement="top" title="twitter">
-                                <i class="mdi mdi-twitter f-24 align-middle text-light"></i>
-                            </a>
-                            <a href="" class="mx-2 avatar-sm text-center" data-bs-toggle="tooltip" data-bs-placement="top" title="googleplay">
-                                <i class="mdi mdi-google-play f-24 align-middle text-light"></i>
-                            </a>
-                            <a href="" class="mx-2 avatar-sm text-center">
-                                <i class="mdi mdi-linkedin f-24 align-middle text-light" data-bs-toggle="tooltip" data-bs-placement="top" title="linkedin"></i>
-                            </a> -->
                         </div>
                     </div>
                 </div>
@@ -1399,6 +1352,17 @@
                                 <a href="mailto:gilangaryadimahardika@gmail.com">
                                     <button type="submit" class="btn btn-muted float-end" name="submit" value="submit">Submit</button>
                                 </a>
+                            </div>
+                            <div class="col-12">
+                                <div class="mb-3">
+                                    <label for="message" class="text-white form-label">Has registered in :</label>
+                                    <div class="">
+                                        <img class="mx-2" src="../../images/aspaqin-logo.webp" alt="" style="width: 115px;">
+                                        <img class="mx-2" src="../../images/kemenkes.png" alt="" style="width: 130px;">
+                                        <img class="mx-2" src="../../images/juleha.png" alt="" style="width: 100px;">
+                                        <img class="mx-1s" src="../../images/halal.png" alt="" style="width: 100px;">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </form>
@@ -1442,14 +1406,16 @@
                 </li>
             </ul>
         </div>
-        <!-- <div class="bottom">
-            <a href="javascript: void(0);" class="settings rounded-end"><i class="uil uil-setting text-white"
-                    style="display: inline; line-height: 46px;"></i></a>
-        </div> -->
     </div>
     <!-- end switcher-->
 
-
+    <!-- whatsapp section -->
+    <div class="circle position-fixed bottom-0 end-0 mb-3">
+        <a href="https://wa.me/+6281395493158">
+            <img src="../../images/whatsapp.png" alt="" style="width: 80px; margin-right: 20px">
+        </a>
+    </div>
+    <!-- end whatsapp section -->
 
     <!--Bootstrap Js-->
     <script src="../../js/bootstrap.bundle.min.js"></script>
@@ -1503,22 +1469,26 @@
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3.5,
+            slidesPerView: 3.8,
             spaceBetween: 5,
             freeMode: true,
             breakpoints: {
                 320: {
-                slidesPerView: 1.3,
-                spaceBetween: 10,},  
+                    slidesPerView: 1.2,
+                    spaceBetween: 10,
+                },
                 480: {
-                slidesPerView: 1.3,
-                spaceBetween: 10,},
+                    slidesPerView: 1.3,
+                    spaceBetween: 10,
+                },
                 640: {
-                slidesPerView: 1.8,
-                spaceBetween: 50, },
+                    slidesPerView: 3.0,
+                    spaceBetween: 20,
+                },
                 1280: {
-                slidesPerView: 3.5,
-                spaceBetween: 50, },
+                    slidesPerView: 3.8,
+                    spaceBetween: 50,
+                },
             },
             pagination: {
                 el: ".swiper-pagination",
