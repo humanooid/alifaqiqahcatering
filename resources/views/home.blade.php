@@ -88,16 +88,18 @@
 
     <!-- home section -->
     <section class="home bg-light" id="home">
+        <img src="../images/slider.png" alt="" style="width: 100%;">
+
         <!-- start container -->
         <div class="container">
             <!-- start row -->
             <div class="row align-items-center">
-                <div class="col-lg-6">
+                <!-- <div class="col-lg-6">
                     {{-- <img src="images/baby-phone.png" alt="" class="img-fluid mb-4 smallphone-image"> --}}
                     <h1 class="display-5 fw-bold mt-5">Aqiqah <span class="hashtag-text px-3">#terbaik</span> dengan paket harga yang tepat.</h1>
                     <p class="mt-4 text-muted">Wilayah Pangkalpinang dan sekitarnya</p>
                     {{-- <button class="btn bg-gradiant mt-4">Read More</button> --}}
-                </div>
+                </div> -->
 
 
 
@@ -899,7 +901,7 @@
 
     <!-- kambing guling section -->
     <div class="website-view">
-        <img src="../images/foto.jpeg" alt="" style="height: 300px; width:100%; background-color: blue; object-fit: cover;">
+        <img src="../images/foto.png" alt="" style="height: 300px; width:100%; background-color: blue; object-fit: cover;">
     </div>
     <!-- end section -->
 

@@ -5,12 +5,28 @@
     --white-color: #ffffff;
 }
 
+.accordion-button:not(.collapsed) {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
 .btn {
     text-decoration: none;
 }
 
 .home {
-    background-image: url(../images/slider.jpg);
+    background-image: url(../images/slider.png);
+}
+
+@media screen and (max-width: 900px) {
+    .home img {
+       display: none;
+    }
+
+    .home {
+        background-image: url(../images/foto-mobile.jpeg);
+        margin-top: 69px;
+    }
 }
 
 .section {
