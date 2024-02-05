@@ -26,8 +26,9 @@
     .home {
         background-image: url(../images/foto-mobile.jpeg);
         margin-top: 69px;
-        background-size: 100% 100%;
+        background-size: 100%;
         width: 100%;
+        min-height: 80vh;
     }
 }
 
