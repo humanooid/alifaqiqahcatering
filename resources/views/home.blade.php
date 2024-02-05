@@ -1359,7 +1359,7 @@
                                 <div class="mb-3">
                                     <label for="message" class="text-white form-label">Has registered in :</label>
                                     <div class="">
-                                        <img class="mx-2" src="../../images/aspaqin-logo.webp" alt="" style="width: 115px;">
+                                        <img class="mx-2" src="../../images/aspaqin-logo.webp" alt="" style="width: 110px;">
                                         <img class="mx-2" src="../../images/kemenkes.png" alt="" style="width: 130px;">
                                         <img class="mx-2" src="../../images/juleha.png" alt="" style="width: 100px;">
                                         <img class="mx-1s" src="../../images/halal.png" alt="" style="width: 100px;">
