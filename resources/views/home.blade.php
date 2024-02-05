@@ -191,7 +191,7 @@
                                     fleksible untuk memenuhi selera yang anda inginkan dengan Kombinasi Harga Murah dan
                                     Kualitas Rasa menghasilkan Ketepatan kepuasan meriah, istimewa, hemat dan Barokah.
                                     <br><br>
-                                    Mendapatkan Sertifikat Aqiqah bagi yang beraqiqah dan bonus mendapatkan Risalah
+                                    Mendapatkan Sertifikat Aqiqah bagi yang beraqiqah dan bonus mendapatkan Merchendise
                                     Aqiqah.
                                     Dan Kami menyediakan Hadiah Spanduk Do'a dan atau Selamat datang untuk Tasyakuran
                                     Aqiqah
@@ -698,7 +698,7 @@
                             <div class="price-tag mt-2">
                                 <h2 class="text-light mb-0 f-40"><sup class="f-22 fw-normal">IDR</sup>1,850</h2>
                             </div>
-                            <p class="text-white-50 mb-0">Domba Betina</p>
+                            <p class="text-white-50 mb-0">Domba/Kambing Betina</p>
                         </div>
                         <div class="border border-3"></div>
 
@@ -725,7 +725,7 @@
                             <div class="price-tag mt-2">
                                 <h2 class="text-white mb-0 f-40"><sup class="f-22 fw-normal">IDR</sup>2,000</h2>
                             </div>
-                            <p class="text-white-50 mb-0">Domba Betina</p>
+                            <p class="text-white-50 mb-0">Domba/Kambing Betina</p>
                         </div>
                         <div class="border border-3"></div>
 
@@ -755,7 +755,7 @@
                             <div class="price-tag mt-2">
                                 <h2 class="text-white mb-0 f-40"><sup class="f-22 fw-normal">IDR</sup>2,200</h2>
                             </div>
-                            <p class="text-white-50 mb-0">Kambing Betina</p>
+                            <p class="text-white-50 mb-0">Domba/Kambing Betina</p>
                         </div>
                         <div class="border border-3"></div>
 
@@ -782,7 +782,7 @@
                             <div class="price-tag mt-2">
                                 <h2 class="text-white mb-0 f-40"><sup class="f-22 fw-normal">IDR</sup>2,650</h2>
                             </div>
-                            <p class="text-white-50 mb-0">Kambing Betina</p>
+                            <p class="text-white-50 mb-0">Domba/Kambing Betina</p>
                         </div>
                         <div class="border border-3"></div>
 
@@ -809,7 +809,7 @@
                             <div class="price-tag mt-2">
                                 <h2 class="text-white mb-0 f-40"><sup class="f-22 fw-normal">IDR</sup>2,800</h2>
                             </div>
-                            <p class="text-white-50 mb-0">Kambing Betina</p>
+                            <p class="text-white-50 mb-0">Domba/Kambing Jantan</p>
                         </div>
                         <div class="border border-3"></div>
 
@@ -841,7 +841,7 @@
                             <div class="price-tag mt-2">
                                 <h2 class="text-white mb-0 f-40"><sup class="f-22 fw-normal">IDR</sup>3,000</h2>
                             </div>
-                            <p class="text-white-50 mb-0">Kambing Jantan</p>
+                            <p class="text-white-50 mb-0">Domba/Kambing Jantan</p>
                         </div>
                         <div class="border border-3"></div>
 
@@ -868,7 +868,7 @@
                             <div class="price-tag mt-2">
                                 <h2 class="text-white mb-0 f-40"><sup class="f-22 fw-normal">IDR</sup>3.300</h2>
                             </div>
-                            <p class="text-white-50 mb-0">Kambing Jantan</p>
+                            <p class="text-white-50 mb-0">Domba/Kambing Jantan</p>
                         </div>
                         <div class="border border-3"></div>
 
@@ -901,24 +901,24 @@
 
     <!-- kambing guling section -->
     <div class="website-view">
-        <img src="../images/foto.png" alt="" style="height: 300px; width:100%; background-color: blue; object-fit: cover;">
+        <img src="../images/foto.png" alt="" style="height: 300px; width:100%; background-color: grey; object-fit: cover;">
     </div>
     <!-- end section -->
 
     <!-- mobile-view -->
     <div class="mobile-view">
-        <img src="../images/foto-mobile.jpeg" alt="" style="height: 300px; width:100%; background-color: blue; object-fit: cover;">
+        <img src="../images/foto-mobile.png" alt="" style="height: 300px; width:100%; background-color: grey; object-fit: cover;">
     </div>
     <!-- end-section -->
 
-    <!-- box package section -->
+    <!-- bundling package section -->
     <section class="section box-package bg-light" id="box-package">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="title text-center mb-5">
                         <h6 class="mb-0 fw-bold text-primary">Paketnya Apa Saja?</h6>
-                        <h2 class="f-40">Pilihan Paket</h2>
+                        <h2 class="f-40">Pilihan Paket Bundling</h2>
                         {{-- <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eos
                             inventore omnis aliquid rerum alias molestias.</p> --}}
 
@@ -929,12 +929,75 @@
             <div class="row align-items-center justify-content-center mb-4">
                 <div class="col-lg-4 mb-3">
                     <div class="card">
-                        <img src="../images/menu_a.jpg" style="border-radius: 17px 17px 0px 0px;">
+                        <img src="../images/bundling-1.jpg" style="border-radius: 17px 17px 0px 0px;">
+                        <div class="card-body">
+                            <div class="card-title">Paket Berkah 1</div>
+                            <div class="card-text">
+                                <ul class="list-unstyled ">
+                                    <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Rp. 2,85 jt</b></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-3">
+                    <div class="card">
+                        <img src="../images/bundling-2.jpg" style="border-radius: 17px 17px 0px 0px;">
+                        <div class="card-body">
+                            <div class="card-title">Paket Berkah 2</div>
+                            <div class="card-text">
+                                <ul class="list-unstyled ">
+                                    <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Rp. 3,7 jt</b></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-3">
+                    <div class="card">
+                        <img src="../images/bundling-3.jpg" style="border-radius: 17px 17px 0px 0px;">
+                        <div class="card-body">
+                            <div class="card-title">Paket Berkah 3</div>
+                            <div class="card-text">
+                                <ul class="list-unstyled ">
+                                    <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Rp. 4,4 jt</b></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- end bundling package section -->
+
+    <!-- box package section -->
+    <section class="section box-package bg-light" id="box-package">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="title text-center mb-5">
+                        <h6 class="mb-0 fw-bold text-primary">Paketnya Apa Saja?</h6>
+                        <h2 class="f-40">Pilihan Paket Box Premium</h2>
+                        {{-- <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eos
+                            inventore omnis aliquid rerum alias molestias.</p> --}}
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center justify-content-center mb-4">
+                <div class="col-lg-4 mb-3">
+                    <div class="card">
+                        <img src="../images/box_a.png" style="border-radius: 17px 17px 0px 0px;">
                         <div class="card-body">
                             <div class="card-title">Paket Nasi Kotak Menu A</div>
                             <div class="card-text">
                                 <ul class="list-unstyled ">
-                                    <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Nasi Putih, Sayur, Acar</b></li><br>
+                                    <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Nasi, Sate, Gulai, Sayur/Acar, Buah, Kerupuk, Sendok, Tisu</b></li>
                                 </ul>
                             </div>
                         </div>
@@ -943,12 +1006,12 @@
 
                 <div class="col-lg-4 mb-3">
                     <div class="card">
-                        <img src="../images/menu_b.jpg" style="border-radius: 17px 17px 0px 0px;">
+                        <img src="../images/box_b.png" style="border-radius: 17px 17px 0px 0px;">
                         <div class="card-body">
                             <div class="card-title">Paket Nasi Kotak Menu B</div>
                             <div class="card-text">
                                 <ul class="list-unstyled ">
-                                    <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Nasi Putih, Sayur/Acar, Buah, Kerupuk, Sambel</b></li>
+                                    <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Nasi, Sate, Gulai, Sayur/Acar, Sambel, Buah, Kerupuk, Sendok, Tissu</b></li>
                                 </ul>
                             </div>
                         </div>
@@ -957,12 +1020,12 @@
 
                 <div class="col-lg-4 mb-3">
                     <div class="card">
-                        <img src="../images/menu_c.jpg" style="border-radius: 17px 17px 0px 0px;">
+                        <img src="../images/box_c.png" style="border-radius: 17px 17px 0px 0px;">
                         <div class="card-body">
                             <div class="card-title">Paket Nasi Kotak Menu C</div>
                             <div class="card-text">
                                 <ul class="list-unstyled ">
-                                    <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Nasi Putih, Sayur/Acar, Buah, Kerupuk, Sambel + Telur</b></li>
+                                    <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Nasi, Sate, Gulai, Sayur/Acar, Telor Balado, Buah, Kerupuk, Sendok, Tissu, Air</b></li>
                                 </ul>
                             </div>
                         </div>
@@ -973,12 +1036,12 @@
             <div class="row align-items-center justify-content-center">
                 <div class="col-lg-4 mb-3">
                     <div class="card">
-                        <img src="../images/menu_d.jpg" style="border-radius: 17px 17px 0px 0px;">
+                        <img src="../images/box_d.png" style="border-radius: 17px 17px 0px 0px;">
                         <div class="card-body">
                             <div class="card-title">Paket Nasi Kotak Menu D</div>
                             <div class="card-text">
                                 <ul class="list-unstyled ">
-                                    <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Nasi Putih, Sayur/Acar, Buah, Kerupuk, Sambel Telur dan Goreng Ati, Air Mineral</b></li><br>
+                                    <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Nasi, Sate, Gulai, Sayur/Acar, Ayam, Telor Balado, Sambel Ati Kentang, Buah, Kerupuk, Sendok, Tissu, Air</b></li>
                                 </ul>
                             </div>
                         </div>
@@ -987,12 +1050,12 @@
 
                 <div class="col-lg-4 mb-3">
                     <div class="card">
-                        <img src="../images/menu_e.jpg" style="border-radius: 17px 17px 0px 0px;">
+                        <img src="../images/box_e.png" style="border-radius: 17px 17px 0px 0px;">
                         <div class="card-body">
                             <div class="card-title">Paket Nasi Kotak Menu E</div>
                             <div class="card-text">
                                 <ul class="list-unstyled ">
-                                    <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Nasi Putih, Sayur/Acar, Buah, Kerupuk, Sambel Telur dan Goreng Ati, Air Mineral, Masakan Ayam</b></li>
+                                    <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Nasi, Sate, Gulai, Sayur/Acar, Ayam, Telor Balado, Buah, Kerupuk, Sendok, Tissu, Air</b></li>
                                 </ul>
                             </div>
                         </div>
@@ -1006,18 +1069,113 @@
     </section>
     <!-- end box package -->
 
+    <!-- bento package section -->
+    <section class="section box-package bg-light" id="box-package">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="title text-center mb-5">
+                        <h6 class="mb-0 fw-bold text-primary">Paketnya Apa Saja?</h6>
+                        <h2 class="f-40">Pilihan Paket Bento</h2>
+                        {{-- <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eos
+                            inventore omnis aliquid rerum alias molestias.</p> --}}
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center justify-content-center mb-4">
+                <div class="col-lg-4 mb-3">
+                    <div class="card">
+                        <img src="../images/bento_a.png" style="border-radius: 17px 17px 0px 0px;">
+                        <div class="card-body">
+                            <div class="card-title">Paket Nasi Kotak Menu A</div>
+                            <div class="card-text">
+                                <ul class="list-unstyled ">
+                                    <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Nasi, Malbi, Gulai, Acar, Buah, Kerupuk</b></li><br>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-3">
+                    <div class="card">
+                        <img src="../images/bento_b.png" style="border-radius: 17px 17px 0px 0px;">
+                        <div class="card-body">
+                            <div class="card-title">Paket Nasi Kotak Menu B</div>
+                            <div class="card-text">
+                                <ul class="list-unstyled ">
+                                    <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Nasi, Malbi, Gulai, Acar, Sambel, Buah, Kerupuk</b></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-3">
+                    <div class="card">
+                        <img src="../images/bento_c.png" style="border-radius: 17px 17px 0px 0px;">
+                        <div class="card-body">
+                            <div class="card-title">Paket Nasi Kotak Menu C</div>
+                            <div class="card-text">
+                                <ul class="list-unstyled ">
+                                    <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Nasi, Malbi, Gulai, Acar, Telor Balado, Buah, Kerupuk</b></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-4 mb-3">
+                    <div class="card">
+                        <img src="../images/bento_d.png" style="border-radius: 17px 17px 0px 0px;">
+                        <div class="card-body">
+                            <div class="card-title">Paket Nasi Kotak Menu D</div>
+                            <div class="card-text">
+                                <ul class="list-unstyled ">
+                                    <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Nasi, Malbi, Gulai, Acar, Telor Balado, Sambeli ati kentang, Buah, Kerupuk</b></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-3">
+                    <div class="card">
+                        <img src="../images/bento_e.png" style="border-radius: 17px 17px 0px 0px;">
+                        <div class="card-body">
+                            <div class="card-title">Paket Nasi Kotak Menu E</div>
+                            <div class="card-text">
+                                <ul class="list-unstyled ">
+                                    <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Nasi, Malbi, Gulai, Acar, Ayam, Telor Balado, Buah, Kerupuk</b></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+    <!-- end bento package -->
+
     <!-- brochure package -->
     <section class="section brochure" id="brochure">
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-lg-4 mb-3">
-                    <div class="square"><img src="../images/bento.jpg" alt="" style="width: 100%; height: 450px; background-color: blue;" class="rounded-3"></div>
+                    <div class="square"><img src="../images/bento.jpg" alt="" style="width: 100%; height: 450px; background-color: grey;" class="rounded-3"></div>
                 </div>
                 <div class="col-lg-4 mb-3">
-                    <div class="square"><img src="../images/box.jpg" alt="" style="width: 100%; height: 450px; background-color: blue;" class="rounded-3"></div>
+                    <div class="square"><img src="../images/box.jpg" alt="" style="width: 100%; height: 450px; background-color: grey;" class="rounded-3"></div>
                 </div>
                 <div class="col-lg-4 mb-3">
-                    <div class="square"><img src="../images/kebuli.jpg" alt="" style="width: 100%; height: 450px; background-color: blue;" class="rounded-3"></div>
+                    <div class="square"><img src="../images/kebuli.jpg" alt="" style="width: 100%; height: 450px; background-color: grey;" class="rounded-3"></div>
                 </div>
             </div>
         </div>
@@ -1228,9 +1386,6 @@
                         <label for="branch">Pilih Cabang</label>
                         <select class="form-control" id="branch">
                             <option>Pangkalpinang</option>
-                            <option>Sungailiat</option>
-                            <option>Toboali</option>
-                            <option>Koba</option>
                         </select>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
@@ -1288,7 +1443,7 @@
                         <b class="text-white">Alamat Kandang</b><br>
                         Parit lalang, Pangkalpinang
                     </p>
-                    <p class="text-white-50 mt-2 mb-0">
+                    <!-- <p class="text-white-50 mt-2 mb-0">
                         <b class="text-white">SUNGAILIAT</b>
                         <br>
                         0812 71 777 43<br>
@@ -1306,7 +1461,7 @@
                         0852 7392 9997<br>
                         Jl. Balai Desa Nibung RT.06
                         Kelurahan Gadung
-                    </p>
+                    </p> -->
                     <div class="footer-icon mt-4">
                         <div class=" d-flex align-items-center">
                             <a href="https://web.facebook.com/people/Alif-Aqiqah-Catering-Pangkalpinang/100069678948378/" class="me-2 avatar-sm text-center" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook">
