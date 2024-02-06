@@ -911,164 +911,6 @@
     </div>
     <!-- end-section -->
 
-    <!-- bundling package section -->
-    <section class="section box-package bg-light" id="box-package">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="title text-center mb-5">
-                        <h6 class="mb-0 fw-bold text-primary">Paketnya Apa Saja?</h6>
-                        <h2 class="f-40">Pilihan Paket Bundling</h2>
-                        {{-- <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eos
-                            inventore omnis aliquid rerum alias molestias.</p> --}}
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="row align-items-center justify-content-center mb-4">
-                <div class="col-lg-4 mb-3">
-                    <div class="card">
-                        <img src="../images/bundling-1.jpg" style="border-radius: 17px 17px 0px 0px;">
-                        <div class="card-body">
-                            <div class="card-title">Paket Berkah 1</div>
-                            <div class="card-text">
-                                <ul class="list-unstyled ">
-                                    <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Rp. 2,85 jt</b></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mb-3">
-                    <div class="card">
-                        <img src="../images/bundling-2.jpg" style="border-radius: 17px 17px 0px 0px;">
-                        <div class="card-body">
-                            <div class="card-title">Paket Berkah 2</div>
-                            <div class="card-text">
-                                <ul class="list-unstyled ">
-                                    <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Rp. 3,7 jt</b></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mb-3">
-                    <div class="card">
-                        <img src="../images/bundling-3.jpg" style="border-radius: 17px 17px 0px 0px;">
-                        <div class="card-body">
-                            <div class="card-title">Paket Berkah 3</div>
-                            <div class="card-text">
-                                <ul class="list-unstyled ">
-                                    <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Rp. 4,4 jt</b></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <!-- end bundling package section -->
-
-    <!-- box package section -->
-    <section class="section box-package bg-light" id="box-package">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="title text-center mb-5">
-                        <h6 class="mb-0 fw-bold text-primary">Paketnya Apa Saja?</h6>
-                        <h2 class="f-40">Pilihan Paket Box Premium</h2>
-                        {{-- <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eos
-                            inventore omnis aliquid rerum alias molestias.</p> --}}
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="row align-items-center justify-content-center mb-4">
-                <div class="col-lg-4 mb-3">
-                    <div class="card">
-                        <img src="../images/box_a.png" style="border-radius: 17px 17px 0px 0px;">
-                        <div class="card-body">
-                            <div class="card-title">Paket Nasi Kotak Menu A</div>
-                            <div class="card-text">
-                                <ul class="list-unstyled ">
-                                    <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Nasi, Sate, Gulai, Sayur/Acar, Buah, Kerupuk, Sendok, Tisu</b></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mb-3">
-                    <div class="card">
-                        <img src="../images/box_b.png" style="border-radius: 17px 17px 0px 0px;">
-                        <div class="card-body">
-                            <div class="card-title">Paket Nasi Kotak Menu B</div>
-                            <div class="card-text">
-                                <ul class="list-unstyled ">
-                                    <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Nasi, Sate, Gulai, Sayur/Acar, Sambel, Buah, Kerupuk, Sendok, Tissu</b></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mb-3">
-                    <div class="card">
-                        <img src="../images/box_c.png" style="border-radius: 17px 17px 0px 0px;">
-                        <div class="card-body">
-                            <div class="card-title">Paket Nasi Kotak Menu C</div>
-                            <div class="card-text">
-                                <ul class="list-unstyled ">
-                                    <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Nasi, Sate, Gulai, Sayur/Acar, Telor Balado, Buah, Kerupuk, Sendok, Tissu, Air</b></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row align-items-center justify-content-center">
-                <div class="col-lg-4 mb-3">
-                    <div class="card">
-                        <img src="../images/box_d.png" style="border-radius: 17px 17px 0px 0px;">
-                        <div class="card-body">
-                            <div class="card-title">Paket Nasi Kotak Menu D</div>
-                            <div class="card-text">
-                                <ul class="list-unstyled ">
-                                    <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Nasi, Sate, Gulai, Sayur/Acar, Ayam, Telor Balado, Sambel Ati Kentang, Buah, Kerupuk, Sendok, Tissu, Air</b></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mb-3">
-                    <div class="card">
-                        <img src="../images/box_e.png" style="border-radius: 17px 17px 0px 0px;">
-                        <div class="card-body">
-                            <div class="card-title">Paket Nasi Kotak Menu E</div>
-                            <div class="card-text">
-                                <ul class="list-unstyled ">
-                                    <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Nasi, Sate, Gulai, Sayur/Acar, Ayam, Telor Balado, Buah, Kerupuk, Sendok, Tissu, Air</b></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
-        </div>
-    </section>
-    <!-- end box package -->
-
     <!-- bento package section -->
     <section class="section box-package bg-light" id="box-package">
         <div class="container">
@@ -1076,7 +918,7 @@
                 <div class="col-lg-6">
                     <div class="title text-center mb-5">
                         <h6 class="mb-0 fw-bold text-primary">Paketnya Apa Saja?</h6>
-                        <h2 class="f-40">Pilihan Paket Bento</h2>
+                        <h2 class="f-40">Pilihan Paket Menu Nasi Kotak dan Bento</h2>
                         {{-- <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eos
                             inventore omnis aliquid rerum alias molestias.</p> --}}
 
@@ -1084,80 +926,42 @@
                 </div>
             </div>
 
-            <div class="row align-items-center justify-content-center mb-4">
-                <div class="col-lg-4 mb-3">
-                    <div class="card">
-                        <img src="../images/bento_a.png" style="border-radius: 17px 17px 0px 0px;">
-                        <div class="card-body">
-                            <div class="card-title">Paket Nasi Kotak Menu A</div>
-                            <div class="card-text">
-                                <ul class="list-unstyled ">
-                                    <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Nasi, Malbi, Gulai, Acar, Buah, Kerupuk</b></li><br>
-                                </ul>
-                            </div>
-                        </div>
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../images/bento.png" class="img-fluid rounded-start p-3" alt="...">
                     </div>
-                </div>
-
-                <div class="col-lg-4 mb-3">
-                    <div class="card">
-                        <img src="../images/bento_b.png" style="border-radius: 17px 17px 0px 0px;">
+                    <div class="col-md-8">
                         <div class="card-body">
-                            <div class="card-title">Paket Nasi Kotak Menu B</div>
-                            <div class="card-text">
-                                <ul class="list-unstyled ">
-                                    <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Nasi, Malbi, Gulai, Acar, Sambel, Buah, Kerupuk</b></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mb-3">
-                    <div class="card">
-                        <img src="../images/bento_c.png" style="border-radius: 17px 17px 0px 0px;">
-                        <div class="card-body">
-                            <div class="card-title">Paket Nasi Kotak Menu C</div>
-                            <div class="card-text">
-                                <ul class="list-unstyled ">
-                                    <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Nasi, Malbi, Gulai, Acar, Telor Balado, Buah, Kerupuk</b></li>
-                                </ul>
-                            </div>
+                            <h5 class="card-title">Pilihan Paket Box Premium</h5>
+                            <p class="card-text mb-0">》》MENU A : 15.000 (Nasi, Sate, Gulai, Sayur/Acar, Buah, Kerupuk, Sendok, Tisu)</p>
+                            <p class="card-text mb-0">》》MENU B : 16.500 (Nasi, Sate, Gulai, Sayur/Acar, Sambel, Buah, Kerupuk, Sendok, Tissu)</p>
+                            <p class="card-text mb-0">》》MENU C : 19.500 (Nasi, Sate, Gulai, Sayur/Acar, Telor Balado, Buah, Kerupuk, Sendok, Tissu, Air)</p>
+                            <p class="card-text mb-0">》》MENU D : 22.000 (Nasi, Sate, Gulai, Sayur/Acar, Ayam, Telor Balado, Sambel Ati Kentang, Buah, Kerupuk, Sendok, Tissu, Air)
+                            <p class="card-text mb-0">》》MENU E : 27.000 (Nasi, Sate, Gulai, Sayur/Acar, Ayam, Telor Balado, Buah, Kerupuk, Sendok, Tissu, Air)</p>
+                            <p class="card-text"><small class="text-muted">*Harga sewaktu-waktu dapat berubah | Update : 6 Februari 2024</small></p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="row align-items-center justify-content-center">
-                <div class="col-lg-4 mb-3">
-                    <div class="card">
-                        <img src="../images/bento_d.png" style="border-radius: 17px 17px 0px 0px;">
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../images/box.png" class="img-fluid rounded-start p-3" alt="...">
+                    </div>
+                    <div class="col-md-8">
                         <div class="card-body">
-                            <div class="card-title">Paket Nasi Kotak Menu D</div>
-                            <div class="card-text">
-                                <ul class="list-unstyled ">
-                                    <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Nasi, Malbi, Gulai, Acar, Telor Balado, Sambeli ati kentang, Buah, Kerupuk</b></li>
-                                </ul>
-                            </div>
+                            <h5 class="card-title">Pilihan Paket Bento</h5>
+                            <p class="card-text mb-0">》》MENU A : 13.000 (Nasi, Malbi, Gulai, Acar, Buah, Kerupuk)</p>
+                            <p class="card-text mb-0">》》MENU B : 14.500 (Nasi, Malbi, Gulai, Acar, Sambel, Buah, Kerupuk)</p>
+                            <p class="card-text mb-0">》》MENU C : 17.500 (Nasi, Malbi, Gulai, Acar, Telor Balado, Buah, Kerupuk)</p>
+                            <p class="card-text mb-0">》》MENU D : 20.000 (Nasi, Malbi, Gulai, Acar, Telor Balado, Sambeli ati kentang, Buah, Kerupuk)
+                            <p class="card-text mb-0">》》MENU E : 25.000(Nasi, Malbi, Gulai, Acar, Ayam, Telor Balado, Buah, Kerupuk)</p>
+                            <p class="card-text"><small class="text-muted">*Harga sewaktu-waktu dapat berubah | Update : 6 Februari 2024</small></p>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-lg-4 mb-3">
-                    <div class="card">
-                        <img src="../images/bento_e.png" style="border-radius: 17px 17px 0px 0px;">
-                        <div class="card-body">
-                            <div class="card-title">Paket Nasi Kotak Menu E</div>
-                            <div class="card-text">
-                                <ul class="list-unstyled ">
-                                    <li><i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i><b>Nasi, Malbi, Gulai, Acar, Ayam, Telor Balado, Buah, Kerupuk</b></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
             </div>
 
         </div>
@@ -1167,6 +971,18 @@
     <!-- brochure package -->
     <section class="section brochure" id="brochure">
         <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="title text-center mb-5">
+                        <h6 class="mb-0 fw-bold text-primary">Paketnya Apa Saja?</h6>
+                        <h2 class="f-40">Pilihan Paket Lainnya</h2>
+                        {{-- <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eos
+                            inventore omnis aliquid rerum alias molestias.</p> --}}
+
+                    </div>
+                </div>
+            </div>
+
             <div class="row align-items-center justify-content-center">
                 <div class="col-lg-4 mb-3">
                     <div class="square"><img src="../images/bento.jpg" alt="" style="width: 100%; height: 450px; background-color: grey;" class="rounded-3"></div>
