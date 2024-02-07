@@ -6,6 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page Alif Aqiqah</title>
 
+    <!-- Primary Meta Tags -->
+    <title>Alif Aqiqah Catering | Promo</title>
+    <meta name="title" content="Alif Aqiqah Catering | Promo" />
+    <meta name="description" content="Promo Paket Aqiqah Februari 2024" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://alifaqiqahcatering.com/landing-page" />
+    <meta property="og:title" content="Alif Aqiqah Catering | Promo" />
+    <meta property="og:description" content="Promo Paket Aqiqah Februari 2024" />
+    <meta property="og:image" content="../images/slider.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://alifaqiqahcatering.com/landing-page" />
+    <meta property="twitter:title" content="Alif Aqiqah Catering | Promo" />
+    <meta property="twitter:description" content="Promo Paket Aqiqah Februari 2024" />
+    <meta property="twitter:image" content="../images/slider.png" />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
+
     <!-- Custom Css -->
     <link rel="stylesheet" href="../../css/landing_page.css" type="text/css" />
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
