@@ -1,0 +1,141 @@
+:root {
+    --primary: #00613A;
+}
+
+.text-main {
+    color: var(--primary) !important;
+}
+
+#navbar {
+  background-color: #333;
+  padding: 20px 0px;
+  max-width: 814px;
+  margin: auto;
+}
+
+h3 span {
+  color: red;
+}
+
+p span {
+  color: red;
+}
+
+.list span {
+  color: var(--primary);
+}
+
+.btn-primary {
+  background-color: var(--primary) !important;
+  transition: transform .3s; /* Animation */
+  margin: 0 auto;
+}
+
+.btn-primary:hover{
+    background-color: var(--primary) !important;
+    opacity: 90%;
+    transform: scale(1.2);
+}
+
+body {
+    background-color: #f1f1f1 !important;
+    font-family: 'Inter';
+}
+
+.paper {
+    background-color: #ffffff !important;
+    max-width: 814px;
+    height: 100%;
+    margin: auto;
+    padding: 1.5rem 1.5rem;
+}
+
+#content .package img {
+    width: 100%;
+}
+
+#navbar .logo {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#content {
+    margin-top: 20px    ;
+}
+
+#content .promo img {
+    width: 100%;
+}
+
+/* countdown */
+/* general styling */
+:root {
+    --smaller: .75;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    color: #333;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  h1 {
+    font-weight: normal;
+    letter-spacing: .125rem;
+    text-transform: uppercase;
+  }
+  
+  li {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+  }
+  
+  li span {
+    display: block;
+    font-size: 3.5rem;
+  }
+  
+  .emoji {
+    display: none;
+    padding: 1rem;
+  }
+  
+  .emoji span {
+    font-size: 4rem;
+    padding: 0 .5rem;
+  }
+
+  ol, ul {
+    padding-left: 0 !important;
+  }
+  
+  @media all and (max-width: 768px) {
+    h1 {
+      font-size: calc(1.5rem * var(--smaller));
+    }
+    
+    li {
+      font-size: calc(1.125rem * var(--smaller));
+    }
+    
+    li span {
+      font-size: calc(3.375rem * var(--smaller));
+    }
+  }
+
+  /* end */
+
+.accordion-button:not(.collapsed) {
+    color: #ffffff !important;
+    background-color: var(--primary) !important;
+}

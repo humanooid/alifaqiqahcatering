@@ -926,7 +926,7 @@
                 </div>
             </div>
 
-            <div class="card mb-3">
+            <div class="card shadow mb-5">
                 <div class="row g-0">
                     <div class="col-md-4">
                         <img src="../images/bento.png" class="img-fluid rounded-start p-3" alt="...">
@@ -945,7 +945,7 @@
                 </div>
             </div>
 
-            <div class="card mb-3">
+            <div class="card shadow mb-3">
                 <div class="row g-0">
                     <div class="col-md-4">
                         <img src="../images/box.png" class="img-fluid rounded-start p-3" alt="...">
